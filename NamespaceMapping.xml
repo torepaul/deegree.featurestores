@@ -2,4 +2,5 @@
 <configurations>
 	<baseUrl>https://raw.githubusercontent.com/jarped/deegree.featurestores/FKB46/</baseUrl>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-TraktorvegSti/4.6">FKB-TraktorvegSti46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-TraktorvegSti/4.6">FKB-TraktorvegSti46.xml</configuration>
 </configurations>
