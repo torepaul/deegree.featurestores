@@ -1,7 +1,7 @@
-<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:app="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" configVersion="3.1.0">
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" configVersion="3.1.0">
   <JDBCConnId>FKB-AR5</JDBCConnId>
   <StorageCRS dim="3D" srid="5972">EPSG:5972</StorageCRS>
-  <GMLSchema>http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6/FKB-AR5.xsd</GMLSchema>
+  <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6/FKB-AR546.xsd</GMLSchema>
   <FeatureTypeMapping name="app:ArealressursFlate" table="ArealressursFlate">
     <FIDMapping prefix="app.ArealressursFlate_">
       <Column name="lokalid" type="string" />
@@ -50,8 +50,8 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6'" />
-        <Primitive path="app:versjonId" mapping="VERSJON" />
+        <Primitive path="app:navnerom" mapping="NAVNEROM" />
+        <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
     <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
@@ -87,8 +87,8 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6'" />
-        <Primitive path="app:versjonId" mapping="VERSJON" />
+        <Primitive path="app:navnerom" mapping="NAVNEROM" />
+        <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
   </FeatureTypeMapping>
