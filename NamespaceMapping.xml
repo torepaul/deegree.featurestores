@@ -7,4 +7,6 @@
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6">FKB-Ar546.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Hoydekurve/4.6/">FKB-Hoydekurve46.xml</configuration>
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Hoydekurve/4.6/">FKB-Hoydekurve46.xml</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.6">FKB-Veg46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.6">FKB-Veg46.xml</configuration>
 </configurations>
