@@ -176,7 +176,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:nedsenketKantstein" mapping="nedsenketkantstein"/>
-		<Primitive path="app:høydereferanse" mapping="høydereferanse"/>
+		<Primitive path="app:høydereferanse" mapping="href"/>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:FortauskantYtre" table="fortauskantytre">
@@ -257,7 +257,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="rep_punkt"/>
+			<Geometry path="." mapping="repPunkt"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -304,7 +304,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:nedsenketKantstein" mapping="nedsenketkantstein"/>
-		<Primitive path="app:høydereferanse" mapping="høydereferanse"/>
+		<Primitive path="app:høydereferanse" mapping="href"/>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:GangfeltAvgrensning" table="gangfeltavgrensning">
@@ -488,7 +488,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="rep_punkt"/>
+			<Geometry path="." mapping="repPunkt"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -622,7 +622,7 @@
 		<Complex path="app:posisjon">
 			<Geometry path="." mapping="posisjon_value"/>
 		</Complex>
-		<Primitive path="app:høydereferanse" mapping="høydereferanse"/>
+		<Primitive path="app:høydereferanse" mapping="href"/>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Trafikkøy" table="trafikkøy">
@@ -659,7 +659,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="rep_punkt"/>
+			<Geometry path="." mapping="repPunkt"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -706,7 +706,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:nedsenketKantstein" mapping="nedsenketkantstein"/>
-		<Primitive path="app:høydereferanse" mapping="høydereferanse"/>
+		<Primitive path="app:høydereferanse" mapping="href"/>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Traktorveg" table="traktorveg">
@@ -743,7 +743,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="rep_punkt"/>
+			<Geometry path="." mapping="repPunkt"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -825,7 +825,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="rep_punkt"/>
+			<Geometry path="." mapping="repPunkt"/>
 		</Complex>
 		<Complex path="app:vegreferanse">
 			<Complex path="app:Vegreferanse">
@@ -879,9 +879,9 @@
 		<Complex path="app:senterlinje">
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
-		<Primitive path="app:høydereferanse" mapping="høydereferanse"/>
+		<Primitive path="app:høydereferanse" mapping="href"/>
 		<Primitive path="app:medium" mapping="medium"/>
-		<Primitive path="app:vegbomtype" mapping="vegbomtype"/>
+		<Primitive path="app:vegbomtype" mapping="nvdb_typevegbom"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Vegdekkekant" table="vegdekkekant">
 		<FIDMapping prefix="APP_VEGDEKKEKANT_">
@@ -926,7 +926,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:nedsenketKantstein" mapping="nedsenketkantstein"/>
-		<Primitive path="app:høydereferanse" mapping="høydereferanse"/>
+		<Primitive path="app:høydereferanse" mapping="href"/>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:VeggrøftÅpen" table="veggrøftåpen">
@@ -1190,8 +1190,8 @@
 		<Complex path="app:senterlinje">
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
-		<Primitive path="app:høydereferanse" mapping="høydereferanse"/>
-		<Primitive path="app:rekkverkstype" mapping="rekkverkstype"/>
+		<Primitive path="app:høydereferanse" mapping="href"/>
+		<Primitive path="app:rekkverkstype" mapping="vegrekkverktype"/>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Vegskulderkant" table="vegskulderkant">
@@ -1237,7 +1237,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:nedsenketKantstein" mapping="nedsenketkantstein"/>
-		<Primitive path="app:høydereferanse" mapping="høydereferanse"/>
+		<Primitive path="app:høydereferanse" mapping="href"/>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 </SQLFeatureStore>
