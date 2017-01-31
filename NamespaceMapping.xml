@@ -18,4 +18,6 @@
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/4.6">FKB-BygnAnlegg46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.6">FKB-Arealbruk46.xml</configuration>
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.6">FKB-Arealbruk46.xml</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6">FKB-Bane46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6">FKB-Bane46.xml</configuration>
 </configurations>
