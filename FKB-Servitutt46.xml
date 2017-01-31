@@ -7,7 +7,7 @@
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:grense">
-			<Geometry path="." mapping=""/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:identifikasjon">
 			<Complex path="app:Identifikasjon">
@@ -51,7 +51,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="geometri_spa"/>
+			<Geometry path="." mapping="reppunkt"/>
 		</Complex>
 		<Complex path="app:servituttgruppe">
 			<Join table="servitutt_app_servituttgruppe" fromColumns="lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
