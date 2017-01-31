@@ -12,4 +12,6 @@
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Tiltak/4.6">FKB-Tiltak46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.6">FKB-Bygning46.xml</configuration>
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.6">FKB-Bygning46.xml</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Servitutt/4.6">FKB-Servitutt46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Servitutt/4.6">FKB-Servitutt46.xml</configuration>
 </configurations>
