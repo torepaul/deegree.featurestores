@@ -22,4 +22,6 @@
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6">FKB-Bane46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/4.6/">FKB-Naturinfo46.xml</configuration>
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/4.6/">FKB-Naturinfo46.xml</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ledning/4.6">FKB-Ledning46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Ledning/4.6">FKB-Ledning46.xml</configuration>
 </configurations>
