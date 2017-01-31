@@ -26,4 +26,6 @@
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Ledning/4.6">FKB-Ledning46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-LedningVA/4.6/">FKB-LedningVA46.xml</configuration>
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-LedningVA/4.6/">FKB-LedningVA46.xml</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.6">FKB-Vann46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.6">FKB-Vann46.xml</configuration>
 </configurations>
