@@ -79,7 +79,7 @@
       <Complex path="app:Registreringsversjon">
         <Primitive path="app:produkt" mapping="produkt"/>
         <Primitive path="app:versjon" mapping="versjon"/>
-        <Primitive path="app:undertype" mapping="undertype"/>
+        <Primitive path="app:undertype" mapping="underversjon"/>
       </Complex>
     </Complex>
     <Primitive path="app:verifiseringsdato" mapping="verifiseringsdato"/>
