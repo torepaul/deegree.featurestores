@@ -66,7 +66,7 @@
     <Primitive path="app:datafangstdato" mapping="datafangstdato"/>
     <Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
     <Primitive path="app:opphav" mapping="opphav"/>
-    <Primitive path="app:prosesshistorie" mapping="prosesshistorie"/>
+    <Primitive path="app:prosesshistorie" mapping="prosess_historie"/>
     <Complex path="app:kopidata">
       <Complex path="app:Kopidata">
         <Primitive path="app:områdeId" mapping="områdeid"/>
