@@ -44,7 +44,7 @@
       <Geometry path="." mapping="geometri_spa"/>
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="rep_punkt"/>
+      <Geometry path="." mapping="rep_punkt_spa"/>
     </Complex>
     <Primitive path="app:arealtype" mapping="ARTYPE" />
     <Primitive path="app:treslag" mapping="ARTRESLAG" />
@@ -91,7 +91,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="geometri"/>
+      <Geometry path="." mapping="geometri_spa"/>
     </Complex>
     <Primitive path="app:avgrensingType" mapping="ARAVGRTYPE"/>
   </FeatureTypeMapping>
@@ -126,7 +126,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="geometri"/>
+      <Geometry path="." mapping="geometri_spa"/>
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
@@ -134,7 +134,7 @@
       <Column name="lokalid" type="string"/>
     </FIDMapping>
     <Complex path="app:grense">
-      <Geometry path="." mapping="geometri"/>
+      <Geometry path="." mapping="geometr_spa"/>
     </Complex>
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
