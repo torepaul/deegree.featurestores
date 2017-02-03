@@ -44,7 +44,7 @@
       <Geometry path="." mapping="geometri_spa"/>
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="rep_punkt_spa"/>
+      <Geometry path="." mapping="reppunkt_spa"/>
     </Complex>
     <Primitive path="app:arealtype" mapping="ARTYPE" />
     <Primitive path="app:treslag" mapping="ARTRESLAG" />
