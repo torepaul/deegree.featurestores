@@ -496,10 +496,7 @@
 		<Primitive path="app:datafangstdato" mapping="datafangstdato"/>
 		<Primitive path="app:treDNivå" mapping="tre_d_nivå"/>
 		<Complex path="app:senterlinje">
-			<Primitive path="@nilReason" mapping="senterlinje_attr_nilreason"/>
-			<Primitive path="@gml:remoteSchema" mapping="senterlinje_attr_gml_remoteschema"/>
-			<Primitive path="@owns" mapping="senterlinje_attr_owns"/>
-			<Geometry path="." mapping="senterlinje_value"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Hjelpepunkt3D" table="hjelpepunkt3d">
@@ -543,7 +540,7 @@
 		<Primitive path="app:datafangstdato" mapping="datafangstdato"/>
 		<Primitive path="app:treDNivå" mapping="tre_d_nivå"/>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="posisjon_value"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
