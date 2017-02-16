@@ -132,7 +132,7 @@
 		<Primitive path="app:innmålingsstatus" mapping="innmålingsstatus"/>
 		<Primitive path="app:medium" mapping="medium"/>
 		<Complex path="app:sefrakident">
-			<Join table="bygning_sefrakident" fromColumns="id" toColumns="parentfk"/>
+			<Join table="bygning_sefrakident" fromColumns="lokalid" toColumns="parentfk"/>
 			<Complex path="app:SefrakIdent">
 				<Complex path="app:kommune">
 					<Primitive path="text()" mapping="sefrakident_kommune"/>
