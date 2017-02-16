@@ -59,7 +59,7 @@
 		<Complex path="app:veglenkeadresse">
 			<Complex path="app:Veglenkeadresse">
 				<Complex path="app:kommunenummer">
-					<Primitive path="text()" mapping="komm"/>
+					<Primitive path="text()" mapping="VEGLENKEADRESSE_KOMM"/>
 				</Complex>
 				<Primitive path="app:adressekode" mapping="adressekode"/>
 				<Primitive path="app:adressenavn" mapping="adressenavn"/>
