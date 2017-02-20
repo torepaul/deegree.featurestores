@@ -1,6 +1,6 @@
 <SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:app="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/LyktogMerker/20170203" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
   <JDBCConnId>lyktmerke_20170112_deegree</JDBCConnId>
-  <StorageCRS srid="0" dim="2D">EPSG:4258</StorageCRS>
+  <StorageCRS srid="4258" dim="2D">EPSG:4258</StorageCRS>
   <GMLSchema>..\..\appschemas\lyktogmerker_20170203.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Bygningspunkt" table="app_bygningspunkt">
     <FIDMapping prefix="APP_BYGNINGSPUNKT_">
@@ -88,11 +88,11 @@
     <Primitive path="app:eier" mapping="app_eier"/>
     <Primitive path="app:gyldigtil" mapping="app_gyldigtil"/>
     <Primitive path="app:lysrefleks" mapping="app_lysrefleks"/>
-    <Complex path="app:utstyr">
-      <Join table="app_fastmerkemedfundament_app_utstyr" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+   <Complex path="app:utstyr">
+      <Join table="app_fastmerkemedfundament_app_utstyr" fromColumns="attr_gml_id" toColumns="parentfk"/>
       <Primitive path="@owns" mapping="attr_owns"/>
       <Feature path=".">
-        <Join table="?" fromColumns="fk" toColumns="attr_gml_id"/>
+        <Join table="app_pilar" fromColumns="fk" toColumns="attr_gml_id"/>
         <Href mapping="href"/>
       </Feature>
     </Complex>
@@ -103,7 +103,7 @@
       <Primitive path="@gml:remoteSchema" mapping="app_fundament_attr_gml_remoteschema"/>
       <Primitive path="@owns" mapping="app_fundament_attr_owns"/>
       <Feature path=".">
-        <Join table="?" fromColumns="app_fundament_fk" toColumns="attr_gml_id"/>
+        <Join table="app_fastmerkemedfundament_app_utstyr" fromColumns="app_fundament_fk" toColumns="attr_gml_id" />
         <Href mapping="app_fundament_href"/>
       </Feature>
     </Complex>
@@ -544,7 +544,7 @@
       <Join table="app_sektorlys_app_sektor" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Primitive path="@owns" mapping="attr_owns"/>
       <Feature path=".">
-        <Join table="?" fromColumns="fk" toColumns="attr_gml_id"/>
+        <Join table="app_lyssektor" fromColumns="fk" toColumns="attr_gml_id"/>
         <Href mapping="href"/>
       </Feature>
     </Complex>
