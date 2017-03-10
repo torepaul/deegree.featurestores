@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-TraktorvegSti/4.6/FKB-TraktorvegSti46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:Veglenke" table="Veglenke">
-		<FIDMapping prefix="APP_VEGLENKE_">
+		<FIDMapping prefix="app.Veglenke_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -74,7 +74,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Vegsperring" table="Vegsperring">
-		<FIDMapping prefix="APP_VEGSPERRING_">
+		<FIDMapping prefix="app.Vegsperring_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
