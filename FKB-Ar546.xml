@@ -3,7 +3,7 @@
   <StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6/FKB-Ar546.xsd</GMLSchema>
   <FeatureTypeMapping name="app:ArealressursFlate" table="arealressursflate">
-    <FIDMapping prefix="APP_AREALRESSURSFLATE_">
+    <FIDMapping prefix="app.ArealressursFlate_">
       <Column name="lokalid" type="string"/>
     </FIDMapping>
     <Complex path="app:identifikasjon">
@@ -53,7 +53,7 @@
     <Primitive path="app:kartstandard" mapping="ARKARTSTD" />
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ArealressursGrense" table="arealressursgrense">
-    <FIDMapping prefix="APP_AREALRESSURSGRENSE_">
+    <FIDMapping prefix="app.ArealressursGrense_">
       <Column name="lokalid" type="string"/>
     </FIDMapping>
     <Complex path="app:identifikasjon">
@@ -96,7 +96,7 @@
     <Primitive path="app:avgrensingType" mapping="ARAVGRTYPE"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ArealressursGrenseFiktiv" table="arealressursgrensefiktiv">
-    <FIDMapping prefix="APP_AREALRESSURSGRENSEFIKTIV_">
+    <FIDMapping prefix="app.ArealressursGrenseFiktiv_">
       <Column name="lokalid" type="string"/>
     </FIDMapping>
     <Complex path="app:identifikasjon">
@@ -130,7 +130,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
-    <FIDMapping prefix="APP_KANTUTSNITT_">
+    <FIDMapping prefix="app.KantUtsnitt_">
       <Column name="lokalid" type="string"/>
     </FIDMapping>
     <Complex path="app:grense">
