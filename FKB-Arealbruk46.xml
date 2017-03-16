@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.6/FKB-Arealbruk46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:Alpinbakke" table="alpinbakke">
-		<FIDMapping prefix="APP_ALPINBAKKE_">
+		<FIDMapping prefix="app.Alpinbakke_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -40,7 +40,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Anleggsområde" table="anleggsområde">
-		<FIDMapping prefix="APP_ANLEGGSOMRÅDE_">
+		<FIDMapping prefix="app.Anleggsområde_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -77,7 +77,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Arealbrukgrense" table="arealbrukgrense">
-		<FIDMapping prefix="APP_AREALBRUKGRENSE_">
+		<FIDMapping prefix="app.Arealbrukgrense_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -120,7 +120,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:ArealbrukgrenseFiktiv" table="arealbrukgrensefiktiv">
-		<FIDMapping prefix="APP_AREALBRUKGRENSEFIKTIV_">
+		<FIDMapping prefix="app.ArealbrukgrenseFiktiv_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -163,7 +163,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Campingplass" table="campingplass">
-		<FIDMapping prefix="APP_CAMPINGPLASS_">
+		<FIDMapping prefix="app.Campingplass_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -200,7 +200,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Fyllplass" table="fyllplass">
-		<FIDMapping prefix="APP_FYLLPLASS_">
+		<FIDMapping prefix="app.Fyllplass_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -237,7 +237,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Golfbane" table="golfbane">
-		<FIDMapping prefix="APP_GOLFBANE_">
+		<FIDMapping prefix="app.Golfbane_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -274,7 +274,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Gravplass" table="gravplass">
-		<FIDMapping prefix="APP_GRAVPLASS_">
+		<FIDMapping prefix="app.Gravplass_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -311,7 +311,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Grustak" table="grustak">
-		<FIDMapping prefix="APP_GRUSTAK_">
+		<FIDMapping prefix="app.Grustak_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -348,7 +348,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Gruve" table="gruve">
-		<FIDMapping prefix="APP_GRUVE_">
+		<FIDMapping prefix="app.Gruve_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -385,7 +385,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Industriområde" table="industriområde">
-		<FIDMapping prefix="APP_INDUSTRIOMRÅDE_">
+		<FIDMapping prefix="app.Industriområde_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -422,7 +422,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
-		<FIDMapping prefix="APP_KANTUTSNITT_">
+		<FIDMapping prefix="app.KantUtsnitt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:grense">
@@ -437,7 +437,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Leirtak" table="leirtak">
-		<FIDMapping prefix="APP_LEIRTAK_">
+		<FIDMapping prefix="app.Leirtak_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -474,7 +474,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Lekeplass" table="lekeplass">
-		<FIDMapping prefix="APP_LEKEPLASS_">
+		<FIDMapping prefix="app.Lekeplass_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -511,7 +511,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Park" table="park">
-		<FIDMapping prefix="APP_PARK_">
+		<FIDMapping prefix="app.Park_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -548,7 +548,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Skytebane" table="skytebane">
-		<FIDMapping prefix="APP_SKYTEBANE_">
+		<FIDMapping prefix="app.Skytebane_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -585,7 +585,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:SportIdrettPlass" table="sportidrettplass">
-		<FIDMapping prefix="APP_SPORTIDRETTPLASS_">
+		<FIDMapping prefix="app.SportIdrettPlass_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -622,7 +622,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Steinbrudd" table="steinbrudd">
-		<FIDMapping prefix="APP_STEINBRUDD_">
+		<FIDMapping prefix="app.Steinbrudd_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -659,7 +659,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Steintipp" table="steintipp">
-		<FIDMapping prefix="APP_STEINTIPP_">
+		<FIDMapping prefix="app.Steintipp_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">

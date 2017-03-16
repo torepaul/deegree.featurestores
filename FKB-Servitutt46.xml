@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Servitutt/4.6/FKB-Servitutt46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
-		<FIDMapping prefix="APP_KANTUTSNITT_">
+		<FIDMapping prefix="app.KantUtsnitt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:grense">
@@ -18,7 +18,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Servitutt" table="servitutt">
-		<FIDMapping prefix="APP_SERVITUTT_">
+		<FIDMapping prefix="app.Servitutt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -73,7 +73,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Servituttgrense" table="servituttgrense">
-		<FIDMapping prefix="APP_SERVITUTTGRENSE_">
+		<FIDMapping prefix="app.Servituttgrense_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -110,7 +110,7 @@
 		<Primitive path="app:jordskifterettenSaksnummer" mapping="jsvsak"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:ServituttgrenseFiktiv" table="servituttgrensefiktiv">
-		<FIDMapping prefix="APP_SERVITUTTGRENSEFIKTIV_">
+		<FIDMapping prefix="app.ServituttgrenseFiktiv_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">

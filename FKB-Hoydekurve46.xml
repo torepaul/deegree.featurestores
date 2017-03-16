@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Hoydekurve/4.6/FKB-Hoydekurve46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:Bruddlinje" table="bruddlinje">
-		<FIDMapping prefix="APP_BRUDDLINJE_">
+		<FIDMapping prefix="app.Bruddlinje_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -46,7 +46,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:DTMPunkt" table="dtmpunkt">
-		<FIDMapping prefix="APP_DTMPUNKT_">
+		<FIDMapping prefix="app.DTMPunkt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -90,7 +90,7 @@
 		<Primitive path="app:høyde" mapping="høyde"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Forsenkningskurve" table="forsenkningskurve">
-		<FIDMapping prefix="APP_FORSENKNINGSKURVE_">
+		<FIDMapping prefix="app.Forsenkningskurve_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -135,7 +135,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Forsenkningspunkt" table="forsenkningspunkt">
-		<FIDMapping prefix="APP_FORSENKNINGSPUNKT_">
+		<FIDMapping prefix="app.Forsenkningspunkt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -180,7 +180,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:FyllingKant" table="fyllingkant">
-		<FIDMapping prefix="APP_FYLLINGKANT_">
+		<FIDMapping prefix="app.FyllingKant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -223,7 +223,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Hjelpekurve" table="hjelpekurve">
-		<FIDMapping prefix="APP_HJELPEKURVE_">
+		<FIDMapping prefix="app.Hjelpekurve_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -268,7 +268,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Høydekurve" table="høydekurve">
-		<FIDMapping prefix="APP_HØYDEKURVE_">
+		<FIDMapping prefix="app.Høydekurve_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -313,7 +313,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:SkjæringKant" table="skjæringkant">
-		<FIDMapping prefix="APP_SKJÆRINGKANT_">
+		<FIDMapping prefix="app.SkjæringKant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -356,7 +356,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Terrenglinje" table="terrenglinje">
-		<FIDMapping prefix="APP_TERRENGLINJE_">
+		<FIDMapping prefix="app.Terrenglinje_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -399,7 +399,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:TerrenglinjeBygg" table="terrenglinjebygg">
-		<FIDMapping prefix="APP_TERRENGLINJEBYGG_">
+		<FIDMapping prefix="app.TerrenglinjeBygg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -442,7 +442,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:TerrenglinjeVeg" table="terrenglinjeveg">
-		<FIDMapping prefix="APP_TERRENGLINJEVEG_">
+		<FIDMapping prefix="app.TerrenglinjeVeg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -485,7 +485,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Terrengpunkt" table="terrengpunkt">
-		<FIDMapping prefix="APP_TERRENGPUNKT_">
+		<FIDMapping prefix="app.Terrengpunkt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -530,7 +530,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Toppunkt" table="toppunkt">
-		<FIDMapping prefix="APP_TOPPUNKT_">
+		<FIDMapping prefix="app.Toppunkt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">

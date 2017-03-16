@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.6/FKB-Veg46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:AnnetVegarealAvgrensning" table="annetvegarealavgrensning">
-		<FIDMapping prefix="APP_ANNETVEGAREALAVGRENSNING_">
+		<FIDMapping prefix="app.AnnetVegarealAvgrensning_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -47,7 +47,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:FartsdemperAvgrensning" table="fartsdemperavgrensning">
-		<FIDMapping prefix="APP_FARTSDEMPERAVGRENSNING_">
+		<FIDMapping prefix="app.FartsdemperAvgrensning_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -91,7 +91,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:FeristAvgrensning" table="feristavgrensning">
-		<FIDMapping prefix="APP_FERISTAVGRENSNING_">
+		<FIDMapping prefix="app.FeristAvgrensning_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -134,7 +134,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Fortauskant" table="fortauskant">
-		<FIDMapping prefix="APP_FORTAUSKANT_">
+		<FIDMapping prefix="app.Fortauskant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -180,7 +180,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:FortauskantYtre" table="fortauskantytre">
-		<FIDMapping prefix="APP_FORTAUSKANTYTRE_">
+		<FIDMapping prefix="app.FortauskantYtre_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -224,7 +224,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:GangSykkelveg" table="gangsykkelveg">
-		<FIDMapping prefix="APP_GANGSYKKELVEG_">
+		<FIDMapping prefix="app.GangSykkelveg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -262,7 +262,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:GangSykkelvegkant" table="gangsykkelvegkant">
-		<FIDMapping prefix="APP_GANGSYKKELVEGKANT_">
+		<FIDMapping prefix="app.GangSykkelvegkant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -308,7 +308,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:GangfeltAvgrensning" table="gangfeltavgrensning">
-		<FIDMapping prefix="APP_GANGFELTAVGRENSNING_">
+		<FIDMapping prefix="app.GangfeltAvgrensning_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -352,7 +352,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Gangvegkant" table="gangvegkant">
-		<FIDMapping prefix="APP_GANGVEGKANT_">
+		<FIDMapping prefix="app.Gangvegkant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -396,7 +396,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
-		<FIDMapping prefix="APP_KANTUTSNITT_">
+		<FIDMapping prefix="app.KantUtsnitt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:grense">
@@ -411,7 +411,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Kjørebanekant" table="kjørebanekant">
-		<FIDMapping prefix="APP_KJØREBANEKANT_">
+		<FIDMapping prefix="app.Kjørebanekant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -455,7 +455,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Parkeringsområde" table="parkeringsområde">
-		<FIDMapping prefix="APP_PARKERINGSOMRÅDE_">
+		<FIDMapping prefix="app.Parkeringsområde_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -493,7 +493,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:ParkeringsområdeAvgrensning" table="parkeringsområdeavgrensning">
-		<FIDMapping prefix="APP_PARKERINGSOMRÅDEAVGRENSNING_">
+		<FIDMapping prefix="app.ParkeringsområdeAvgrensning_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -537,7 +537,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Skiltportal" table="skiltportal">
-		<FIDMapping prefix="APP_SKILTPORTAL_">
+		<FIDMapping prefix="app.Skiltportal_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -581,7 +581,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Trafikksignalpunkt" table="trafikksignalpunkt">
-		<FIDMapping prefix="APP_TRAFIKKSIGNALPUNKT_">
+		<FIDMapping prefix="app.Trafikksignalpunkt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -626,7 +626,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Trafikkøy" table="trafikkøy">
-		<FIDMapping prefix="APP_TRAFIKKØY_">
+		<FIDMapping prefix="app.Trafikkøy_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -664,7 +664,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Trafikkøykant" table="trafikkøykant">
-		<FIDMapping prefix="APP_TRAFIKKØYKANT_">
+		<FIDMapping prefix="app.Trafikkøykant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -710,7 +710,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Traktorveg" table="traktorveg">
-		<FIDMapping prefix="APP_TRAKTORVEG_">
+		<FIDMapping prefix="app.Traktorveg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -748,7 +748,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Traktorvegkant" table="traktorvegkant">
-		<FIDMapping prefix="APP_TRAKTORVEGKANT_">
+		<FIDMapping prefix="app.Traktorvegkant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -792,7 +792,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Veg" table="veg">
-		<FIDMapping prefix="APP_VEG_">
+		<FIDMapping prefix="app.Veg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -838,7 +838,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Vegbom" table="vegbom">
-		<FIDMapping prefix="APP_VEGBOM_">
+		<FIDMapping prefix="app.Vegbom_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -884,7 +884,7 @@
 		<Primitive path="app:vegbomtype" mapping="nvdb_typevegbom"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Vegdekkekant" table="vegdekkekant">
-		<FIDMapping prefix="APP_VEGDEKKEKANT_">
+		<FIDMapping prefix="app.Vegdekkekant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -930,7 +930,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:VeggrøftÅpen" table="veggrøftåpen">
-		<FIDMapping prefix="APP_VEGGRØFTÅPEN_">
+		<FIDMapping prefix="app.VeggrøftÅpen_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -973,7 +973,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:VegkantAnnetVegareal" table="vegkantannetvegareal">
-		<FIDMapping prefix="APP_VEGKANTANNETVEGAREAL_">
+		<FIDMapping prefix="app.VegkantAnnetVegareal_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -1017,7 +1017,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:VegkantAvkjørsel" table="vegkantavkjørsel">
-		<FIDMapping prefix="APP_VEGKANTAVKJØRSEL_">
+		<FIDMapping prefix="app.VegkantAvkjørsel_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -1061,7 +1061,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:VegkantFiktiv" table="vegkantfiktiv">
-		<FIDMapping prefix="APP_VEGKANTFIKTIV_">
+		<FIDMapping prefix="app.VegkantFiktiv_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -1105,7 +1105,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:VegoppmerkingLangsgående" table="vegoppmerkinglangsgående">
-		<FIDMapping prefix="APP_VEGOPPMERKINGLANGSGÅENDE_">
+		<FIDMapping prefix="app.VegoppmerkingLangsgående_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -1149,7 +1149,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Vegrekkverk" table="vegrekkverk">
-		<FIDMapping prefix="APP_VEGREKKVERK_">
+		<FIDMapping prefix="app.Vegrekkverk_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -1195,7 +1195,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Vegskulderkant" table="vegskulderkant">
-		<FIDMapping prefix="APP_VEGSKULDERKANT_">
+		<FIDMapping prefix="app.Vegskulderkant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">

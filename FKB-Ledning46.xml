@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>..\..\appschemas\FKB-Ledning46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:EL_Belysningspunkt" table="el_belysningspunkt">
-		<FIDMapping prefix="APP_EL_BELYSNINGSPUNKT_">
+		<FIDMapping prefix="app.EL_Belysningspunkt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -72,7 +72,7 @@
 		<Primitive path="app:bruk" mapping="BELYSNINGSBRUK"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:EL_Flymarkør" table="el_flymarkør">
-		<FIDMapping prefix="APP_EL_FLYMARKØR_">
+		<FIDMapping prefix="app.EL_Flymarkør_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -132,7 +132,7 @@
 		<Primitive path="app:hovedbruk" mapping="LEDNINGSNETTVERKSTYPE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:EL_Nettstasjon" table="el_nettstasjon">
-		<FIDMapping prefix="APP_EL_NETTSTASJON_">
+		<FIDMapping prefix="app.EL_Nettstasjon_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -193,7 +193,7 @@
 		<Primitive path="app:type" mapping="EL_STASJONSTYPE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:EL_Vindturbin" table="el_vindturbin">
-		<FIDMapping prefix="APP_EL_VINDTURBIN_">
+		<FIDMapping prefix="app.EL_Vindturbin_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -254,7 +254,7 @@
 		<Primitive path="app:type" mapping="EL_STASJONSTYPE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Kanal" table="kanal">
-		<FIDMapping prefix="APP_KANAL_">
+		<FIDMapping prefix="app.Kanal_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -314,7 +314,7 @@
 		<Primitive path="app:hovedbruk" mapping="LEDNINGSNETTVERKSTYPE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:LednKum" table="lednkum">
-		<FIDMapping prefix="APP_LEDNKUM_">
+		<FIDMapping prefix="app.LednKum_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -382,7 +382,7 @@
 		<Primitive path="app:kumfunksjon" mapping="kumfunksjon"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Mast" table="mast">
-		<FIDMapping prefix="APP_MAST_">
+		<FIDMapping prefix="app.Mast_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -459,7 +459,7 @@
 		<Primitive path="app:luftfartshindermerking" mapping="MAST_LUFTFARTSHINDERMERKING"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Masteomriss" table="masteomriss">
-		<FIDMapping prefix="APP_MASTEOMRISS_">
+		<FIDMapping prefix="app.Masteomriss_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -520,7 +520,7 @@
 		<Primitive path="app:høydereferanse" mapping="LEDN_HØYDEREFERANSE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:NettstasjonAdkomst" table="nettstasjonadkomst">
-		<FIDMapping prefix="APP_NETTSTASJONADKOMST_">
+		<FIDMapping prefix="app.NettstasjonAdkomst_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -580,7 +580,7 @@
 		<Primitive path="app:høydereferanse" mapping="LEDN_HØYDEREFERANSE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Nettverkstasjonomriss" table="nettverkstasjonomriss">
-		<FIDMapping prefix="APP_NETTVERKSTASJONOMRISS_">
+		<FIDMapping prefix="app.Nettverkstasjonomriss_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -640,7 +640,7 @@
 		<Primitive path="app:høydereferanse" mapping="LEDN_HØYDEREFERANSE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Skap" table="skap">
-		<FIDMapping prefix="APP_SKAP_">
+		<FIDMapping prefix="app.Skap_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -700,7 +700,7 @@
 		<Primitive path="app:hovedbruk" mapping="LEDNINGSNETTVERKSTYPE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Trase" table="trase">
-		<FIDMapping prefix="APP_TRASE_">
+		<FIDMapping prefix="app.Trase_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -774,7 +774,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Åk" table="åk">
-		<FIDMapping prefix="APP_ÅK_">
+		<FIDMapping prefix="app.Åk_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:medium" mapping="medium"/>

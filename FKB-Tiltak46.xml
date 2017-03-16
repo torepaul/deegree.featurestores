@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Tiltak/4.6/FKB-Tiltak46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:AndreTiltak" table="andre_tiltak">
-		<FIDMapping prefix="APP_ANDRETILTAK_">
+		<FIDMapping prefix="app.AndreTiltak_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -47,7 +47,7 @@
 		<Primitive path="app:saksnummer" mapping="saksnr"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
-		<FIDMapping prefix="APP_KANTUTSNITT_">
+		<FIDMapping prefix="app.KantUtsnitt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:grense">
@@ -62,7 +62,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:PblSøknad" table="pblsøknad">
-		<FIDMapping prefix="APP_PBLSØKNAD_">
+		<FIDMapping prefix="app.PblSøknad_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -107,7 +107,7 @@
 		<Primitive path="app:behandlingsstatus" mapping="behstat"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:PblSøknadGrense" table="pblsøknadgrense">
-		<FIDMapping prefix="APP_PBLSØKNADGRENSE_">
+		<FIDMapping prefix="app.PblSøknadGrense_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -142,7 +142,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:PblTiltak" table="pbltiltak">
-		<FIDMapping prefix="APP_PBLTILTAK_">
+		<FIDMapping prefix="app.PblTiltak_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -195,7 +195,7 @@
 		<Primitive path="app:tiltaksbeskrivelse" mapping="beskriv"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:TiltakGrense" table="tiltakgrense">
-		<FIDMapping prefix="APP_TILTAKGRENSE_">
+		<FIDMapping prefix="app.TiltakGrense_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">

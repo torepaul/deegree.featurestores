@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6/FKB-Bane46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:Jernbaneplattformkant" table="jernbaneplattformkant">
-		<FIDMapping prefix="APP_JERNBANEPLATTFORMKANT_">
+		<FIDMapping prefix="app.Jernbaneplattformkant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -47,7 +47,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Spormidt" table="spormidt">
-		<FIDMapping prefix="APP_SPORMIDT_">
+		<FIDMapping prefix="app.Spormidt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">

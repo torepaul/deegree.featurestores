@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Lufthavn/4.6/FKB-Lufthavn46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:Lufthavnlys" table="lufthavnlys">
-		<FIDMapping prefix="APP_LUFTHAVNLYS_">
+		<FIDMapping prefix="app.Lufthavnlys_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -47,7 +47,7 @@
 		<Primitive path="app:lufthavnlystype" mapping="LHLYSTYPE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Plattformgrense" table="plattformgrense">
-		<FIDMapping prefix="APP_PLATTFORMGRENSE_">
+		<FIDMapping prefix="app.Plattformgrense_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -90,7 +90,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Rullebanegrense" table="rullebanegrense">
-		<FIDMapping prefix="APP_RULLEBANEGRENSE_">
+		<FIDMapping prefix="app.Rullebanegrense_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -133,7 +133,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Taksebanegrense" table="taksebanegrense">
-		<FIDMapping prefix="APP_TAKSEBANEGRENSE_">
+		<FIDMapping prefix="app.Taksebanegrense_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">

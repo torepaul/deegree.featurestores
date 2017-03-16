@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/4.6/FKB-Naturinfo46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:Allé" table="allé">
-		<FIDMapping prefix="APP_ALLÉ_">
+		<FIDMapping prefix="app.Allé_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -48,7 +48,7 @@
 		<Primitive path="app:høydereferanse" mapping="href"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Hekk" table="hekk">
-		<FIDMapping prefix="APP_HEKK_">
+		<FIDMapping prefix="app.Hekk_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -93,7 +93,7 @@
 		<Primitive path="app:høydereferanse" mapping="href"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:InnmåltTre" table="innmålttre">
-		<FIDMapping prefix="APP_INNMÅLTTRE_">
+		<FIDMapping prefix="app.InnmåltTre_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -138,7 +138,7 @@
 		<Primitive path="app:høydereferanse" mapping="href"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
-		<FIDMapping prefix="APP_KANTUTSNITT_">
+		<FIDMapping prefix="app.KantUtsnitt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:grense">
@@ -153,7 +153,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Stein" table="stein">
-		<FIDMapping prefix="APP_STEIN_">
+		<FIDMapping prefix="app.Stein_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -190,7 +190,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:SteinOmriss" table="steinomriss">
-		<FIDMapping prefix="APP_STEINOMRISS_">
+		<FIDMapping prefix="app.SteinOmriss_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">

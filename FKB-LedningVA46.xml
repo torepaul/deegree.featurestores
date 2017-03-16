@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-LedningVA/4.6/FKB-LedningVA46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:Kumlokk" table="kumlokk">
-		<FIDMapping prefix="APP_KUMLOKK_">
+		<FIDMapping prefix="app.Kumlokk_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:datafangstdato" mapping="datafangstdato"/>
@@ -46,7 +46,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:VA_Hydrant" table="va_hydrant">
-		<FIDMapping prefix="APP_VA_HYDRANT_">
+		<FIDMapping prefix="app.VA_Hydrant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:datafangstdato" mapping="datafangstdato"/>
@@ -90,7 +90,7 @@
 		<Primitive path="app:høydereferanse" mapping="LEDN_HØYDEREFERANSE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:VA_Sluk" table="va_sluk">
-		<FIDMapping prefix="APP_VA_SLUK_">
+		<FIDMapping prefix="app.VA_Sluk_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Primitive path="app:datafangstdato" mapping="datafangstdato"/>

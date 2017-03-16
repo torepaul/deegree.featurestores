@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.6/FKB-Bygning46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:AnnenBygning" table="annenbygning">
-		<FIDMapping prefix="APP_ANNENBYGNING_">
+		<FIDMapping prefix="app.AnnenBygning_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -43,7 +43,7 @@
 		<Primitive path="app:innmålingsstatus" mapping="innmålingsstatus"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Arkade" table="arkade">
-		<FIDMapping prefix="APP_ARKADE_">
+		<FIDMapping prefix="app.Arkade_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -88,7 +88,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Bygning" table="bygning">
-		<FIDMapping prefix="APP_BYGNING_">
+		<FIDMapping prefix="app.Bygning_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -143,7 +143,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:BygningBru" table="bygningbru">
-		<FIDMapping prefix="APP_BYGNINGBRU_">
+		<FIDMapping prefix="app.BygningBru_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -186,7 +186,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:BygningsavgrensningTiltak" table="bygningsavgrensningtiltak">
-		<FIDMapping prefix="APP_BYGNINGSAVGRENSNINGTILTAK_">
+		<FIDMapping prefix="app.BygningsavgrensningTiltak_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -233,7 +233,7 @@
 		<Primitive path="app:høydeoverbakken" mapping="hob"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Bygningsdelelinje" table="bygningsdelelinje">
-		<FIDMapping prefix="APP_BYGNINGSDELELINJE_">
+		<FIDMapping prefix="app.Bygningsdelelinje_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -277,7 +277,7 @@
 		<Primitive path="app:treDNivå" mapping="tre_d_nivå"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Bygningslinje" table="bygningslinje">
-		<FIDMapping prefix="APP_BYGNINGSLINJE_">
+		<FIDMapping prefix="app.Bygningslinje_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -321,7 +321,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Fasadeliv" table="fasadeliv">
-		<FIDMapping prefix="APP_FASADELIV_">
+		<FIDMapping prefix="app.Fasadeliv_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -367,7 +367,7 @@
 		<Primitive path="app:skalAvgrenseBygning" mapping="skal_avgr_bygn"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:FiktivBygningsavgrensning" table="fiktivbygningsavgrensning">
-		<FIDMapping prefix="APP_FIKTIVBYGNINGSAVGRENSNING_">
+		<FIDMapping prefix="app.FiktivBygningsavgrensning_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -411,7 +411,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Grunnmur" table="grunnmur">
-		<FIDMapping prefix="APP_GRUNNMUR_">
+		<FIDMapping prefix="app.Grunnmur_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -456,7 +456,7 @@
 		<Primitive path="app:høydereferanse" mapping="href"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Hjelpelinje3D" table="hjelpelinje3d">
-		<FIDMapping prefix="APP_HJELPELINJE3D_">
+		<FIDMapping prefix="app.Hjelpelinje3D_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -500,7 +500,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Hjelpepunkt3D" table="hjelpepunkt3d">
-		<FIDMapping prefix="APP_HJELPEPUNKT3D_">
+		<FIDMapping prefix="app.Hjelpepunkt3D_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -544,7 +544,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
-		<FIDMapping prefix="APP_KANTUTSNITT_">
+		<FIDMapping prefix="app.KantUtsnitt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:grense">
@@ -559,7 +559,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Låvebru" table="låvebru">
-		<FIDMapping prefix="APP_LÅVEBRU_">
+		<FIDMapping prefix="app.Låvebru_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -602,7 +602,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Mønelinje" table="mønelinje">
-		<FIDMapping prefix="APP_MØNELINJE_">
+		<FIDMapping prefix="app.Mønelinje_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -646,7 +646,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Portrom" table="portrom">
-		<FIDMapping prefix="APP_PORTROM_">
+		<FIDMapping prefix="app.Portrom_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -691,7 +691,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:TakMur" table="takmur">
-		<FIDMapping prefix="APP_TAKMUR_">
+		<FIDMapping prefix="app.TakMur_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -735,7 +735,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Takkant" table="takkant">
-		<FIDMapping prefix="APP_TAKKANT_">
+		<FIDMapping prefix="app.Takkant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -781,7 +781,7 @@
 		<Primitive path="app:takskjegg" mapping="takskjegg"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Takoverbygg" table="takoverbygg">
-		<FIDMapping prefix="APP_TAKOVERBYGG_">
+		<FIDMapping prefix="app.Takoverbygg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -818,7 +818,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:TakoverbyggKant" table="takoverbyggkant">
-		<FIDMapping prefix="APP_TAKOVERBYGGKANT_">
+		<FIDMapping prefix="app.TakoverbyggKant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -861,7 +861,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Takplatå" table="takplatå">
-		<FIDMapping prefix="APP_TAKPLATÅ_">
+		<FIDMapping prefix="app.Takplatå_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -905,7 +905,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:TakplatåTopp" table="takplatåtopp">
-		<FIDMapping prefix="APP_TAKPLATÅTOPP_">
+		<FIDMapping prefix="app.TakplatåTopp_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -949,7 +949,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Taksprang" table="taksprang">
-		<FIDMapping prefix="APP_TAKSPRANG_">
+		<FIDMapping prefix="app.Taksprang_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -993,7 +993,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:TaksprangBunn" table="taksprangbunn">
-		<FIDMapping prefix="APP_TAKSPRANGBUNN_">
+		<FIDMapping prefix="app.TaksprangBunn_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -1037,7 +1037,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:TrappBygg" table="trappbygg">
-		<FIDMapping prefix="APP_TRAPPBYGG_">
+		<FIDMapping prefix="app.TrappBygg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -1080,7 +1080,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Veranda" table="veranda">
-		<FIDMapping prefix="APP_VERANDA_">
+		<FIDMapping prefix="app.Veranda_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">

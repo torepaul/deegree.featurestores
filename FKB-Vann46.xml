@@ -3,7 +3,7 @@
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.6/FKB-Vann46.xsd</GMLSchema>
 	<FeatureTypeMapping name="app:Dataavgrensning" table="dataavgrensning">
-		<FIDMapping prefix="APP_DATAAVGRENSNING_">
+		<FIDMapping prefix="app.Dataavgrensning_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -46,7 +46,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:ElvBekk" table="elvbekk">
-		<FIDMapping prefix="APP_ELVBEKK_">
+		<FIDMapping prefix="app.ElvBekk_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -97,7 +97,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:ElvBekkKant" table="elvbekkkant">
-		<FIDMapping prefix="APP_ELVBEKKKANT_">
+		<FIDMapping prefix="app.ElvBekkKant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -141,7 +141,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:ElveElvSperre" table="elveelvsperre">
-		<FIDMapping prefix="APP_ELVEELVSPERRE_">
+		<FIDMapping prefix="app.ElveElvSperre_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -184,7 +184,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:ElvelinjeFiktiv" table="elvelinjefiktiv">
-		<FIDMapping prefix="APP_ELVELINJEFIKTIV_">
+		<FIDMapping prefix="app.ElvelinjeFiktiv_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -227,7 +227,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:FiktivDelelinje" table="fiktivdelelinje">
-		<FIDMapping prefix="APP_FIKTIVDELELINJE_">
+		<FIDMapping prefix="app.FiktivDelelinje_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -270,7 +270,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Flomløpkant" table="flomløpkant">
-		<FIDMapping prefix="APP_FLOMLØPKANT_">
+		<FIDMapping prefix="app.Flomløpkant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -313,7 +313,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:HavElvSperre" table="havelvsperre">
-		<FIDMapping prefix="APP_HAVELVSPERRE_">
+		<FIDMapping prefix="app.HavElvSperre_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -358,7 +358,7 @@
 		<Primitive path="app:høyde" mapping="høyde"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Havflate" table="havflate">
-		<FIDMapping prefix="APP_HAVFLATE_">
+		<FIDMapping prefix="app.Havflate_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -396,7 +396,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Innsjø" table="innsjø">
-		<FIDMapping prefix="APP_INNSJØ_">
+		<FIDMapping prefix="app.Innsjø_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -435,7 +435,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:InnsjøElvSperre" table="innsjøelvsperre">
-		<FIDMapping prefix="APP_INNSJØELVSPERRE_">
+		<FIDMapping prefix="app.InnsjøElvSperre_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -479,7 +479,7 @@
 		<Primitive path="app:høyde" mapping="høyde"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Innsjøkant" table="innsjøkant">
-		<FIDMapping prefix="APP_INNSJØKANT_">
+		<FIDMapping prefix="app.Innsjøkant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -524,7 +524,7 @@
 		<Primitive path="app:høyde" mapping="høyde"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:InnsjøkantRegulert" table="innsjøkantregulert">
-		<FIDMapping prefix="APP_INNSJØKANTREGULERT_">
+		<FIDMapping prefix="app.InnsjøkantRegulert_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -569,7 +569,7 @@
 		<Primitive path="app:høyde" mapping="høyde"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:InnsjølinjeFiktiv" table="innsjølinjefiktiv">
-		<FIDMapping prefix="APP_INNSJØLINJEFIKTIV_">
+		<FIDMapping prefix="app.InnsjølinjeFiktiv_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -612,7 +612,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KanalGrøft" table="kanalgrøft">
-		<FIDMapping prefix="APP_KANALGRØFT_">
+		<FIDMapping prefix="app.KanalGrøft_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -663,7 +663,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KanalGrøftKant" table="kanalgrøftkant">
-		<FIDMapping prefix="APP_KANALGRØFTKANT_">
+		<FIDMapping prefix="app.KanalGrøftKant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -707,7 +707,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
-		<FIDMapping prefix="APP_KANTUTSNITT_">
+		<FIDMapping prefix="app.KantUtsnitt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:grense">
@@ -722,7 +722,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Kystkontur" table="kystkontur">
-		<FIDMapping prefix="APP_KYSTKONTUR_">
+		<FIDMapping prefix="app.Kystkontur_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -768,7 +768,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KystkonturTekniskeAnlegg" table="kystkonturtekniskeanlegg">
-		<FIDMapping prefix="APP_KYSTKONTURTEKNISKEANLEGG_">
+		<FIDMapping prefix="app.KystkonturTekniskeAnlegg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -815,7 +815,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Navigasjonsinstallasjon" table="navigasjonsinstallasjon">
-		<FIDMapping prefix="APP_NAVIGASJONSINSTALLASJON_">
+		<FIDMapping prefix="app.Navigasjonsinstallasjon_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -858,7 +858,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Skjær" table="skjær">
-		<FIDMapping prefix="APP_SKJÆR_">
+		<FIDMapping prefix="app.Skjær_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -902,7 +902,7 @@
 		<Primitive path="app:høyde" mapping="høyde"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:SnøIsbre" table="snøisbre">
-		<FIDMapping prefix="APP_SNØISBRE_">
+		<FIDMapping prefix="app.SnøIsbre_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
@@ -939,7 +939,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:SnøIsbreKant" table="snøisbrekant">
-		<FIDMapping prefix="APP_SNØISBREKANT_">
+		<FIDMapping prefix="app.SnøIsbreKant_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
