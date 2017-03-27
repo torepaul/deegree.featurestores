@@ -40,7 +40,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="geometri_spa"/>
+			<Geometry path="." mapping="RepPunkt_spa"/>
 		</Complex>
 		<Primitive path="app:andretiltak" mapping="andre_tiltak"/>
 		<Primitive path="app:kartregistrering" mapping="kartreg"/>
@@ -99,7 +99,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="geometri_spa"/>
+			<Geometry path="." mapping="RepPunkt_spa"/>
 		</Complex>
 		<Primitive path="app:saksnummer" mapping="saksnr"/>
 		<Primitive path="app:sakstype" mapping="sakstype"/>
@@ -179,7 +179,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="geometri_spa"/>
+			<Geometry path="." mapping="RepPunkt_spa"/>
 		</Complex>
 		<Primitive path="app:kartregistrering" mapping="kartreg"/>
 		<Primitive path="app:avgjørelsesdato" mapping="avgjdato"/>
