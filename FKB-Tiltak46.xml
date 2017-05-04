@@ -2,7 +2,7 @@
 	<JDBCConnId>sql</JDBCConnId>
 	<StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
 	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Tiltak/4.6/FKB-Tiltak46.xsd</GMLSchema>
-	<FeatureTypeMapping name="app:AndreTiltak" table="andre_tiltak">
+	<FeatureTypeMapping name="app:AndreTiltak" table="AndreTiltak">
 		<FIDMapping prefix="app.AndreTiltak_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
