@@ -135,7 +135,7 @@
 			<Join table="bygning_sefrakident" fromColumns="lokalid" toColumns="parentfk"/>
 			<Complex path="app:SefrakIdent">
 				<Complex path="app:kommune">
-					<Primitive path="text()" mapping="sefrakident_kommune"/>
+					<Primitive path="text()" mapping="sefrakident_komm"/>
 				</Complex>
 				<Primitive path="app:registreringskretsnummer" mapping="registreringskretsnummer"/>
 				<Primitive path="app:husløpenummer" mapping="husløpenummer"/>
