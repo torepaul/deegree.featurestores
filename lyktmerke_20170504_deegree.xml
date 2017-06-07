@@ -3,7 +3,7 @@
   <StorageCRS srid="4258" dim="2D">EPSG:4258</StorageCRS>
   <GMLSchema>http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/LyktogMerker/20170504/lyktogmerker.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Bygningspunkt" table="bygningspunkt">
-    <FIDMapping prefix="BYGNINGSPUNKT_">
+    <FIDMapping prefix="app.Bygningspunkt_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -24,7 +24,7 @@
     <Primitive path="app:bygningsfunksjon" mapping="bygningsfunksjon"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FastmerkeMedFundament" table="fastmerkemedfundament">
-    <FIDMapping prefix="FSJ.">
+    <FIDMapping prefix="app.FastmerkeMedFundament_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -83,7 +83,7 @@
     <Primitive path="app:klasse" mapping="klasse"/>
      </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FastmerkeUtenFundament" table="fastmerkeutenfundament">
-    <FIDMapping prefix="FASTMERKEUTENFUNDAMENT_">
+    <FIDMapping prefix="app.FastmerkeUtenFundament_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -146,7 +146,7 @@
     <Primitive path="app:radarreflektor" mapping="radarreflektor"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FlytendeMerke" table="flytendemerke">
-    <FIDMapping prefix="FLYTENDEMERKE_">
+    <FIDMapping prefix="app.FlytendeMerke_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -210,7 +210,7 @@
     <Primitive path="app:radarreflektor" mapping="radarreflektor"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:IndirekteBelysning" table="indirektebelysning">
-    <FIDMapping prefix="INDIREKTEBELYSNING_">
+    <FIDMapping prefix="app.IndirekteBelysning_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -237,7 +237,7 @@
     <Primitive path="app:lysretning" mapping="lysretning"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Landemerke" table="landemerke">
-    <FIDMapping prefix="LANDEMERKE_">
+    <FIDMapping prefix="app.Landemerke_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -260,7 +260,7 @@
     <Primitive path="app:visuelltydelighet" mapping="visuelltydelighet"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Lyssektor" table="lyssektor">
-    <FIDMapping prefix="LYSSEKTOR_">
+    <FIDMapping prefix="app.Lyssektor_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -282,7 +282,7 @@
     <Primitive path="app:sektorradius" mapping="sektorradius"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Overett" table="overett">
-    <FIDMapping prefix="OVERETT_">
+    <FIDMapping prefix="app.Overett_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -325,7 +325,7 @@
     <Primitive path="app:nedremerkeFK" mapping="nedremerkefk"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Pilar" table="pilar">
-    <FIDMapping prefix="FUN.">
+    <FIDMapping prefix="app.Pilar">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -347,7 +347,7 @@
     <Primitive path="app:pilarkategori" mapping="pilarkategori"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Racon" table="racon">
-    <FIDMapping prefix="RACON_">
+    <FIDMapping prefix="app.Racon_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -370,7 +370,7 @@
     <Primitive path="app:radarfyrtype" mapping="radarfyrtype"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Radiofyr" table="radiofyr">
-    <FIDMapping prefix="RADIOFYR_">
+    <FIDMapping prefix="app.Radiofyr_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -392,7 +392,7 @@
     <Primitive path="app:modulasjon" mapping="modulasjon"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Rundtlysende" table="rundtlysende">
-    <FIDMapping prefix="RUNDTLYSENDE_">
+    <FIDMapping prefix="app.Rundtlysende_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
@@ -418,7 +418,7 @@
     <Primitive path="app:lysfarge" mapping="lysfarge"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Sektorlys" table="sektorlys">
-    <FIDMapping prefix="SEKTORLYS_">
+    <FIDMapping prefix="app.Sektorlys_">
       <Column name="lokalid" type="string"/>
      
     </FIDMapping>
