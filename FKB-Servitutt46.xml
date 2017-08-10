@@ -51,7 +51,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Complex path="app:servituttgruppe">
 			<Join table="servitutt_app_servituttgruppe" fromColumns="lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>

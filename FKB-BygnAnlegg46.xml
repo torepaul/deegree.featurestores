@@ -90,7 +90,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:høydereferanse" mapping="href"/>
 	</FeatureTypeMapping>
@@ -261,7 +261,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:bruOverBru" mapping="bruoverbru"/>
 		<Primitive path="app:brutrafikktype" mapping="brutrafikktype">
@@ -397,7 +397,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:høydereferanse" mapping="href"/>
 	</FeatureTypeMapping>
@@ -479,7 +479,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Damkant" table="damkant">
@@ -559,7 +559,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Dikekant" table="dikekant">
@@ -639,7 +639,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Elveforbygningskant" table="elveforbygningskant">
@@ -719,7 +719,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:ElveterskelKant" table="elveterskelkant">
@@ -842,7 +842,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:FiskehjellGrense" table="fiskehjellgrense">
@@ -1063,7 +1063,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Complex path="app:senterlinje">
 			<Geometry path="." mapping="geometri_spa"/>
@@ -1242,7 +1242,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -1333,7 +1333,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -1548,7 +1548,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KaiBryggeKant" table="kaibryggekant">
@@ -1730,7 +1730,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -1998,7 +1998,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:høydereferanse" mapping="href"/>
 	</FeatureTypeMapping>
@@ -2265,7 +2265,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Silokant" table="silokant">
@@ -2438,7 +2438,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -2828,7 +2828,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -2919,7 +2919,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -3046,7 +3046,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Tribunekant" table="tribunekant">
@@ -3179,7 +3179,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>

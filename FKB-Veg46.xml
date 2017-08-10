@@ -257,7 +257,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="repPunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -488,7 +488,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="repPunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -659,7 +659,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="repPunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -743,7 +743,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="repPunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
@@ -825,7 +825,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="repPunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Complex path="app:vegreferanse">
 			<Complex path="app:Vegreferanse">

@@ -36,7 +36,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Anleggsområde" table="anleggsområde">
@@ -73,7 +73,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Arealbrukgrense" table="arealbrukgrense">
@@ -196,7 +196,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Fyllplass" table="fyllplass">
@@ -233,7 +233,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Golfbane" table="golfbane">
@@ -270,7 +270,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Gravplass" table="gravplass">
@@ -307,7 +307,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Grustak" table="grustak">
@@ -344,7 +344,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Gruve" table="gruve">
@@ -381,7 +381,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Industriområde" table="industriområde">
@@ -418,7 +418,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:KantUtsnitt" table="kantutsnitt">
@@ -470,7 +470,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Lekeplass" table="lekeplass">
@@ -507,7 +507,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Park" table="park">
@@ -544,7 +544,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Skytebane" table="skytebane">
@@ -581,7 +581,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:SportIdrettPlass" table="sportidrettplass">
@@ -618,7 +618,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Steinbrudd" table="steinbrudd">
@@ -655,7 +655,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Steintipp" table="steintipp">
@@ -692,7 +692,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="reppunkt"/>
+			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 </SQLFeatureStore>
