@@ -620,7 +620,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="posisjon_value"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:høydereferanse" mapping="href"/>
 		<Primitive path="app:medium" mapping="medium"/>
