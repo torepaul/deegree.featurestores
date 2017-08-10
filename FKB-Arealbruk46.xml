@@ -108,11 +108,11 @@
 		</Complex>
 		<Complex path="app:kvalitet">
 			<Complex path="app:Posisjonskvalitet">
-				<Primitive path="app:målemetode" mapping="kvalitet_app_posisjonskvalitet_app_målemetode"/>
-				<Primitive path="app:nøyaktighet" mapping="kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
-				<Primitive path="app:synbarhet" mapping="kvalitet_app_posisjonskvalitet_app_synbarhet"/>
-				<Primitive path="app:målemetodeHøyde" mapping="kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
-				<Primitive path="app:nøyaktighetHøyde" mapping="kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+				<Primitive path="app:målemetode" mapping="målemetode"/>
+				<Primitive path="app:nøyaktighet" mapping="nøyaktighet"/>
+				<Primitive path="app:synbarhet" mapping="synbarhet"/>
+				<Primitive path="app:målemetodeHøyde" mapping="h_målemetode"/>
+				<Primitive path="app:nøyaktighetHøyde" mapping="h_nøyaktighet"/>
 			</Complex>
 		</Complex>
 		<Complex path="app:grense">
@@ -151,11 +151,11 @@
 		</Complex>
 		<Complex path="app:kvalitet">
 			<Complex path="app:Posisjonskvalitet">
-				<Primitive path="app:målemetode" mapping="kvalitet_app_posisjonskvalitet_app_målemetode"/>
-				<Primitive path="app:nøyaktighet" mapping="kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
-				<Primitive path="app:synbarhet" mapping="kvalitet_app_posisjonskvalitet_app_synbarhet"/>
-				<Primitive path="app:målemetodeHøyde" mapping="kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
-				<Primitive path="app:nøyaktighetHøyde" mapping="kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+				<Primitive path="app:målemetode" mapping="målemetode"/>
+				<Primitive path="app:nøyaktighet" mapping="nøyaktighet"/>
+				<Primitive path="app:synbarhet" mapping="synbarhet"/>
+				<Primitive path="app:målemetodeHøyde" mapping="h_målemetode"/>
+				<Primitive path="app:nøyaktighetHøyde" mapping="h_nøyaktighet"/>
 			</Complex>
 		</Complex>
 		<Complex path="app:grense">
