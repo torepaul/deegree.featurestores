@@ -371,7 +371,7 @@
 		<Complex path="app:posisjon">
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
-		<Primitive path="app:hovedbruk" mapping="LEDNINGSNETTVERKSTYPEHOVEDBRUK"/>
+		<Primitive path="app:hovedbruk" mapping="LEDNINGSNETTVERKSTYPE"/>
 		<Complex path="app:fellesføring">
 			<Join table="lednkum_app_fellesføring" fromColumns="lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
 			<Complex path="app:Fellesføring">
