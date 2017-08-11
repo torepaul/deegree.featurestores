@@ -48,7 +48,7 @@
 		<Primitive path="app:medium" mapping="medium"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:BautaStatue" table="bautastatue">
-		<FIDMapping prefix="app.BautaStatue">
+		<FIDMapping prefix="app.BautaStatue_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<Complex path="app:identifikasjon">
