@@ -576,7 +576,7 @@
 			</Complex>
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
-		<Primitive path="app:type" mapping="EL_STASJONSTYPE"/>
+		<Primitive path="app:type" mapping="NETTVERKSSTASJONADKOMSTTYPE"/>
 		<Primitive path="app:høydereferanse" mapping="LEDN_HØYDEREFERANSE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Nettverkstasjonomriss" table="nettverkstasjonomriss">
@@ -636,7 +636,7 @@
 			</Complex>
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
-		<Primitive path="app:type" mapping="EL_STASJONSTYPE"/>
+		<Primitive path="app:type" mapping="NETTVERKSTASJONTYPE"/>
 		<Primitive path="app:høydereferanse" mapping="LEDN_HØYDEREFERANSE"/>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Skap" table="skap">
