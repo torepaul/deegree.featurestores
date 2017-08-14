@@ -515,7 +515,7 @@
 			</Complex>
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
-		<Primitive path="app:type" mapping="EL_STASJONSTYPE"/>
+		<Primitive path="app:type" mapping="mastekonstruksjon"/>
 		<Primitive path="app:mastefunksjon" mapping="mastefunksjon"/>
 		<Primitive path="app:høydereferanse" mapping="LEDN_HØYDEREFERANSE"/>
 	</FeatureTypeMapping>
