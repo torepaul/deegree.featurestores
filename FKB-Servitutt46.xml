@@ -54,7 +54,7 @@
 			<Geometry path="." mapping="reppunkt_spa"/>
 		</Complex>
 		<Complex path="app:servituttgruppe">
-			<Join table="servitutt_app_servituttgruppe" fromColumns="lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
+			<Join table="Servitutt_SERV" fromColumns="ID" toColumns="ServituttID"/>
 			<Complex path="app:Servituttgruppe">
 				<Complex path="app:matrikkelnummer">
 					<Complex path="app:Matrikkelnummer">
