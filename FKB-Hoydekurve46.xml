@@ -42,7 +42,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:DTMPunkt" table="dtmpunkt">
@@ -85,7 +85,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:høyde" mapping="høyde"/>
 	</FeatureTypeMapping>
@@ -129,7 +129,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:høyde" mapping="høyde"/>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -174,7 +174,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:høyde" mapping="høyde"/>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -219,7 +219,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:grense">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Hjelpekurve" table="hjelpekurve">
@@ -262,7 +262,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:høyde" mapping="høyde"/>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -307,7 +307,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:høyde" mapping="høyde"/>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -352,7 +352,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:grense">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Terrenglinje" table="terrenglinje">
@@ -395,7 +395,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:TerrenglinjeBygg" table="terrenglinjebygg">
@@ -438,7 +438,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:TerrenglinjeVeg" table="terrenglinjeveg">
@@ -481,7 +481,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Terrengpunkt" table="terrengpunkt">
@@ -524,7 +524,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:høyde" mapping="høyde"/>
 		<Primitive path="app:medium" mapping="medium"/>
@@ -569,7 +569,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:posisjon">
-			<Geometry path="." mapping="geometri"/>
+			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Primitive path="app:høyde" mapping="høyde"/>
 		<Primitive path="app:medium" mapping="medium"/>
