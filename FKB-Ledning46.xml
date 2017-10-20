@@ -49,7 +49,7 @@
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
 		<Complex path="app:eier">
-			<Join table="EL_Belysningspunkt_LEDN_EIER" fromColumns="ID" toColumns="EL_BelysningspunktID"/>
+			<Join table="EL_Belysningspunkt_LEDN_EIER" fromColumns="lokalid" toColumns="EL_BelysningspunktID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -62,7 +62,7 @@
 		</Complex>
 		<Primitive path="app:hovedbruk" mapping="LEDNINGSNETTVERKSTYPE"/>
 		<Complex path="app:fellesføring">
-			<Join table="EL_Belysningspunkt_FELLESFØRIN" fromColumns="ID" toColumns="EL_BelysningspunktID"/>
+			<Join table="EL_Belysningspunkt_FELLESFØRIN" fromColumns="lokalid" toColumns="EL_BelysningspunktID"/>
 			<Complex path="app:Fellesføring">
 				<Primitive path="app:fellesføringType" mapping="FELLES_LEDNINGSNETTVERKSTYPE"/>
 				<Primitive path="app:leietaker" mapping="LEDN_LEIETAKER"/>
@@ -118,7 +118,7 @@
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
 		<Complex path="app:eier">
-			<Join table="EL_Flymarkør_LEDN_EIER" fromColumns="ID" toColumns="EL_FlymarkørID"/>
+			<Join table="EL_Flymarkør_LEDN_EIER" fromColumns="lokalid" toColumns="EL_FlymarkørID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -178,7 +178,7 @@
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
 		<Complex path="app:eier">
-			<Join table="El_Nettstasjon_LEDN_EIER" fromColumns="ID" toColumns="EL_NettstasjonID" />
+			<Join table="El_Nettstasjon_LEDN_EIER" fromColumns="lokalid" toColumns="EL_NettstasjonID" />
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -239,7 +239,7 @@
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
 		<Complex path="app:eier">
-			<Join table="El_Vindturbin_LEDN_EIER" fromColumns="ID" toColumns="EL_VindturbinID"/>
+			<Join table="El_Vindturbin_LEDN_EIER" fromColumns="lokalid" toColumns="EL_VindturbinID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -300,7 +300,7 @@
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
 		<Complex path="app:eier">
-			<Join table="Kanal_LEDN_EIER" fromColumns="ID" toColumns="KanalID"/>
+			<Join table="Kanal_LEDN_EIER" fromColumns="lokalid" toColumns="KanalID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -360,7 +360,7 @@
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
 		<Complex path="app:eier">
-			<Join table="LednKum_LEDN_EIER" fromColumns="ID" toColumns="LednKumID"/>
+			<Join table="LednKum_LEDN_EIER" fromColumns="lokalid" toColumns="LednKumID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -373,7 +373,7 @@
 		</Complex>
 		<Primitive path="app:hovedbruk" mapping="LEDNINGSNETTVERKSTYPEHOVEDBRUK"/>
 		<Complex path="app:fellesføring">
-			<Join table="LednKum_FELLESFØRING" fromColumns="ID" toColumns="LednKumID"/>
+			<Join table="LednKum_FELLESFØRING" fromColumns="lokalid" toColumns="LednKumID"/>
 			<Complex path="app:Fellesføring">
 				<Primitive path="app:fellesføringType" mapping="FELLES_LEDNINGSNETTVERKSTYPE"/>
 				<Primitive path="app:leietaker" mapping="LEDN_LEIETAKER"/>
@@ -428,7 +428,7 @@
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
 		<Complex path="app:eier">
-			<Join table="Mast_LEDN_EIER" fromColumns="ID" toColumns="MastID"/>
+			<Join table="Mast_LEDN_EIER" fromColumns="lokalid" toColumns="MastID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -441,7 +441,7 @@
 		</Complex>
 		<Primitive path="app:hovedbruk" mapping="LEDNINGSNETTVERKSTYPEHOVEDBRUK"/>
 		<Complex path="app:fellesføring">
-			<Join table="Mast_FELLESFØRING" fromColumns="ID" toColumns="MastID"/>
+			<Join table="Mast_FELLESFØRING" fromColumns="lokalid" toColumns="MastID"/>
 			<Complex path="app:Fellesføring">
 				<Primitive path="app:fellesføringType" mapping="FELLES_LEDNINGSNETTVERKSTYPE"/>
 				<Primitive path="app:leietaker" mapping="LEDN_LEIETAKER"/>
@@ -507,7 +507,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:eier">
-			<Join table="Masteomriss_LEDN_EIER" fromColumns="ID" toColumns="MasteomrissID"/>
+			<Join table="Masteomriss_LEDN_EIER" fromColumns="lokalid" toColumns="MasteomrissID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -568,7 +568,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:eier">
-			<Join table="NettstasjonAdkomst_LEDN_EIER" fromColumns="ID" toColumns="NettstasjonAdkomstID"/>
+			<Join table="NettstasjonAdkomst_LEDN_EIER" fromColumns="lokalid" toColumns="NettstasjonAdkomstID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -628,7 +628,7 @@
 			<Geometry path="." mapping="geometri_spa"/>
 		</Complex>
 		<Complex path="app:eier">
-			<Join table="Nettverkstasjonomriss_LEDN_EI" fromColumns="ID" toColumns="NettverkstasjonomrissID"/>
+			<Join table="Nettverkstasjonomriss_LEDN_EI" fromColumns="lokalid" toColumns="NettverkstasjonomrissID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -686,7 +686,7 @@
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
 		<Complex path="app:eier">
-			<Join table="Skap_LEDN_EIER" fromColumns="ID" toColumns="SkapID"/>
+			<Join table="Skap_LEDN_EIER" fromColumns="lokalid" toColumns="SkapID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -746,7 +746,7 @@
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
 		<Complex path="app:eier">
-			<Join table="Trase_LEDN_EIER" fromColumns="ID" toColumns="TraseID"/>
+			<Join table="Trase_LEDN_EIER" fromColumns="lokalid" toColumns="TraseID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
@@ -820,7 +820,7 @@
 		</Complex>
 		<Primitive path="app:driftsmerking" mapping="driftsmerking"/>
 		<Complex path="app:eier">
-			<Join table="Åk_LEDN_EIER" fromColumns="ID" toColumns="ÅkID"/>
+			<Join table="Åk_LEDN_EIER" fromColumns="lokalid" toColumns="ÅkID"/>
 			<Complex path="app:Eier">
 				<Primitive path="app:eiertype" mapping="LEDN_EIERTYPE"/>
 				<Primitive path="app:eier" mapping="LEDN_EIERNAVN"/>
