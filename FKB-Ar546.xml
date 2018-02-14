@@ -134,7 +134,7 @@
       <Column name="lokalid" type="string"/>
     </FIDMapping>
     <Complex path="app:grense">
-      <Geometry path="." mapping="geometr_spa"/>
+      <Geometry path="." mapping="geometri_spa"/>
     </Complex>
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
