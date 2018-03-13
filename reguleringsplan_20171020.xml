@@ -1018,7 +1018,7 @@
     <Complex path="app:objektposisjon">
       <Geometry path="." mapping="Geometri" />
     </Complex>
-    <Primitive path="app:tekstplassering" mapping="TEKSTPLASSERING" />
+    <!-- <Primitive path="app:tekstplassering" mapping="TEKSTPLASSERING" /> -->
     <Primitive path="app:generellTekststreng" mapping="STRENG" />
     <Primitive path="app:påskriftType" mapping="RPPÅSKRIFTTYPE" />
   </FeatureTypeMapping>
