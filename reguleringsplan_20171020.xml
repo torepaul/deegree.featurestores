@@ -22,7 +22,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpOmråde" table="vRpOmråde">
@@ -42,10 +42,10 @@
     <Primitive path="app:informasjon" mapping="INFORMASJON" />
     <Primitive path="app:link" mapping="LINK" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Complex path="app:arealplanId">
       <Complex path="app:NasjonalArealplanId">
@@ -92,10 +92,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:reguleringsformål" mapping="REGFORM" />
     <Primitive path="app:reguleringsformålsutdyping" mapping="REGFORMUTDYP" />
@@ -131,7 +131,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpArealformålOmråde" table="vRpArealformålOmråde">
@@ -157,10 +157,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:arealformål" mapping="RPAREALFORMÅL" />
     <Primitive path="app:eierform" mapping="EIERFORM" />
@@ -197,7 +197,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RbBevaringOmråde" table="vRbBevaringOmråde">
@@ -223,10 +223,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:reguleringsformål" mapping="REGFORM" />
     <Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
@@ -254,10 +254,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:reguleringsformål" mapping="REGFORM" />
     <Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
@@ -283,7 +283,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RbFornyelseOmråde" table="vRbFornyelseOmråde">
@@ -309,10 +309,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:reguleringsformål" mapping="REGFORM" />
     <Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
@@ -337,7 +337,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RbRekkefølgeOmråde" table="vRbRekkefølgeOmråde">
@@ -363,10 +363,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:reguleringsformål" mapping="REGFORM" />
     <Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
@@ -391,7 +391,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RbRestriksjonOmråde" table="vRbRestriksjonOmråde">
@@ -417,10 +417,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:reguleringsformål" mapping="REGFORM" />
     <Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
@@ -445,7 +445,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpFareGrense" table="vRpFareGrense">
@@ -468,7 +468,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpAngittHensynSone" table="vRpAngittHensynSone">
@@ -494,10 +494,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:angittHensyn" mapping="RPANGITTHENSYN" />
     <Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
@@ -523,7 +523,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpBestemmelseOmråde" table="vRpBestemmelseOmråde">
@@ -549,10 +549,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:bestemmelseOmrådeNavn" mapping="BESTEMMELSEOMRNAVN" />
     <Primitive path="app:type" mapping="RPBESTEMMELSEHJEMMEL" />
@@ -577,7 +577,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpBåndleggingSone" table="vRpBåndleggingSone">
@@ -603,10 +603,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:båndlegging" mapping="RPBÅNDLEGGING" />
     <Primitive path="app:båndlagtFremTil" mapping="BÅNDLAGTFREMTIL" />
@@ -633,7 +633,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpDetaljeringSone" table="vRpDetaljeringSone">
@@ -659,10 +659,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:detaljering" mapping="RPDETALJERING" />
     <Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
@@ -691,10 +691,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:fare" mapping="RPFARE" />
     <Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
@@ -720,7 +720,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpGjennomføringSone" table="vRpGjennomføringSone">
@@ -746,10 +746,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:gjennomføring" mapping="RPGJENNOMFØRING" />
     <Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
@@ -775,7 +775,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpInfrastrukturSone" table="vRpInfrastrukturSone">
@@ -801,10 +801,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:infrastruktur" mapping="RPINFRASTRUKTUR" />
     <Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
@@ -830,7 +830,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpSikringSone" table="vRpSikringSone">
@@ -856,10 +856,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:sikring" mapping="RPSIKRING" />
     <Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
@@ -885,7 +885,7 @@
       </Complex>
     </Complex>
     <Complex path="app:grense">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpStøySone" table="vRpStøySone">
@@ -911,10 +911,10 @@
     <Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
     <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
     <Complex path="app:område">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:posisjon">
-      <Geometry path="." mapping="RepPunkt" />
+      <Geometry path="." mapping="RepPunkt_SPA" />
     </Complex>
     <Primitive path="app:støy" mapping="RPSTØY" />
     <Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
@@ -949,7 +949,7 @@
       </Complex>
     </Complex>
     <Complex path="app:senterlinje">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Primitive path="app:juridisklinje" mapping="RPJURLINJE" />
   </FeatureTypeMapping>
@@ -982,7 +982,7 @@
       </Complex>
     </Complex>
     <Complex path="app:objektposisjon">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Primitive path="app:symbolretning" mapping="SYMBOLRETNING" />
     <Primitive path="app:juridiskpunkt" mapping="RPJURPUNKT" />
@@ -1016,10 +1016,10 @@
       </Complex>
     </Complex>
     <Complex path="app:objektposisjon">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <!-- <Primitive path="app:tekstplassering" mapping="TEKSTPLASSERING" /> -->
-    <Primitive path="app:generellTekststreng" mapping="STRENG" />
+    <Primitive path="app:generellTekststreng" mapping="text" />
     <Primitive path="app:påskriftType" mapping="RPPÅSKRIFTTYPE" />
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:RpRegulertHøyde" table="vRpRegulertHøyde">
@@ -1051,7 +1051,7 @@
       </Complex>
     </Complex>
     <Complex path="app:senterlinje">
-      <Geometry path="." mapping="Geometri" />
+      <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
     <Complex path="app:høydefraplanbestemmelse">
       <Complex path="app:HøydeFraPlanbestemmelse">
