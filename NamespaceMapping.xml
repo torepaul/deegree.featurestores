@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurations>
-	<baseUrl>https://raw.githubusercontent.com/Norconsult/deegree.featurestores/FKB46/</baseUrl>
-	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-TraktorvegSti/4.6">FKB-TraktorvegSti46.xml</configuration>
+	<baseUrl>https://raw.githubusercontent.com/Norconsult/deegree.featurestores/FKB461/</baseUrl>
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-TraktorvegSti/4.6">FKB-TraktorvegSti46.xml</configuration>
-	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6">FKB-Ar546.xml</configuration>
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6">FKB-Ar546.xml</configuration>
-	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Hoydekurve/4.6/">FKB-Hoydekurve46.xml</configuration>
 	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Hoydekurve/4.6/">FKB-Hoydekurve46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Tiltak/4.6">FKB-Tiltak46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.6">FKB-Bygning46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.61">FKB-Bygning461.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Servitutt/4.6">FKB-Servitutt46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/4.6">FKB-BygnAnlegg46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.6">FKB-Arealbruk46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6">FKB-Bane46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/4.6/">FKB-Naturinfo46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Ledning/4.6">FKB-Ledning46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-LedningVA/4.6/">FKB-LedningVA46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.6">FKB-Vann46.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Lufthavn/4.6/">FKB-Lufthavn46.xml</configuration>
+
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-TraktorvegSti/4.6">FKB-TraktorvegSti46.xml</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6">FKB-Ar546.xml</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Hoydekurve/4.6/">FKB-Hoydekurve46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.6">FKB-Veg46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Tiltak/4.6">FKB-Tiltak46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Tiltak/4.6">FKB-Tiltak46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.6">FKB-Bygning46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.6">FKB-Bygning46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.61">FKB-Bygning461.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.61">FKB-Bygning461.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Servitutt/4.6">FKB-Servitutt46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Servitutt/4.6">FKB-Servitutt46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/4.6">FKB-BygnAnlegg46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/4.6">FKB-BygnAnlegg46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.6">FKB-Arealbruk46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.6">FKB-Arealbruk46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6">FKB-Bane46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6">FKB-Bane46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/4.6/">FKB-Naturinfo46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/4.6/">FKB-Naturinfo46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ledning/4.6">FKB-Ledning46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Ledning/4.6">FKB-Ledning46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-LedningVA/4.6/">FKB-LedningVA46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-LedningVA/4.6/">FKB-LedningVA46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.6">FKB-Vann46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.6">FKB-Vann46.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Lufthavn/4.6/">FKB-Lufthavn46.xml</configuration>
-	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/FKB-Lufthavn/4.6/">FKB-Lufthavn46.xml</configuration>
+
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61">FKB-Arealbruk461.xsd</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/4.61">FKB-BygnAnlegg461.xsd</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-LedningVA/4.61">FKB-LedningVA461.xsd</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.61">FKB-Vann461.xsd</configuration>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61">FKB-Veg461.xsd</configuration>
 </configurations>
