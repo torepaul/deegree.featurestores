@@ -6,6 +6,32 @@
     <FIDMapping prefix="app.AnnetVegarealAvgrensning_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -24,6 +50,32 @@
     <FIDMapping prefix="app.FartsdemperAvgrensning_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -42,6 +94,32 @@
     <FIDMapping prefix="app.FeristAvgrensning_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -59,6 +137,32 @@
     <FIDMapping prefix="app.Fortauskant_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -79,6 +183,32 @@
     <FIDMapping prefix="app.GangfeltAvgrensning_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -135,6 +265,32 @@
     <FIDMapping prefix="app.GangSykkelvegkant_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -155,6 +311,32 @@
     <FIDMapping prefix="app.Gangvegkant_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -173,6 +355,32 @@
     <FIDMapping prefix="app.Kjørebanekant_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -229,6 +437,32 @@
     <FIDMapping prefix="app.Skiltportal_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -285,6 +519,32 @@
     <FIDMapping prefix="app.Trafikkøykant_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -305,6 +565,32 @@
     <FIDMapping prefix="app.Trafikksignalpunkt_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -362,6 +648,32 @@
     <FIDMapping prefix="app.Traktorvegkant_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -426,6 +738,32 @@
     <FIDMapping prefix="app.Vegbom_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -446,6 +784,32 @@
     <FIDMapping prefix="app.Vegdekkekant_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -466,6 +830,32 @@
     <FIDMapping prefix="app.VeggrøftÅpen_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -483,6 +873,32 @@
     <FIDMapping prefix="app.VegkantAnnetVegareal_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -501,6 +917,32 @@
     <FIDMapping prefix="app.VegkantAvkjørsel_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -519,6 +961,32 @@
     <FIDMapping prefix="app.VegkantFiktiv_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -537,6 +1005,32 @@
     <FIDMapping prefix="app.VegoppmerkingLangsgående_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -555,6 +1049,32 @@
     <FIDMapping prefix="app.Vegrekkverk_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -575,6 +1095,32 @@
     <FIDMapping prefix="app.Vegskulderkant_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="DATAFANGSTDATO" />
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="PRODUKT" />
+        <Primitive path="app:versjon" mapping="VERSJON" />
+        <Primitive path="app:undertype" mapping="UNDERVERSJON" />
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="VERIFISERINGSDATO" />
+    <Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+    <Primitive path="app:informasjon" mapping="INFORMASJON" />
+    <Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="OMRÅDEID" />
+        <Primitive path="app:originalDatavert" mapping="ORIGINALDATAVERT" />
+        <Primitive path="app:kopidato" mapping="KOPIDATO" />
+      </Complex>
+    </Complex>
     <Complex path="app:kvalitet">
       <Complex path="app:Posisjonskvalitet">
         <Primitive path="app:målemetode" mapping="MÅLEMETODE" />
@@ -595,6 +1141,16 @@
     <FIDMapping prefix="app.KantUtsnitt_">
       <Column name="lokalid" type="string" />
     </FIDMapping>
+    <Complex path="app:grense">
+      <Geometry path="." mapping="Geometri_SPA" />
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="lokalid" />
+        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61'" />
+        <Primitive path="app:versjonId" mapping="VERSJON" />
+      </Complex>
+    </Complex>
     <Complex path="app:grense">
       <Geometry path="." mapping="Geometri_SPA" />
     </Complex>
