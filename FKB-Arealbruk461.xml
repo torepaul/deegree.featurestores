@@ -9,7 +9,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -52,7 +52,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -95,7 +95,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -132,7 +132,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -169,7 +169,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -206,7 +206,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -243,7 +243,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -280,7 +280,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -317,7 +317,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -354,7 +354,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -391,7 +391,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -428,7 +428,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -465,7 +465,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -502,7 +502,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -542,7 +542,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
@@ -552,7 +552,7 @@
     <Complex path="app:identifikasjon">
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
-        <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61'" />
+        <Primitive path="app:navnerom" mapping="navnerom" />
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
