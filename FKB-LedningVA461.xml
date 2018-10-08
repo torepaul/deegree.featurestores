@@ -38,7 +38,7 @@
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
         <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-LedningVA/4.61'" />
-        <Primitive path="app:versjonId" mapping="VERSJON" />
+        <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
     <Complex path="app:senterLokk">
@@ -81,7 +81,7 @@
       <Complex path="app:Identifikasjon">
         <Primitive path="app:lokalId" mapping="lokalid" />
         <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-LedningVA/4.61'" />
-        <Primitive path="app:versjonId" mapping="VERSJON" />
+        <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
     <Primitive path="app:høydereferanse" mapping="LEDN_HØYDEREFERANSE" />
