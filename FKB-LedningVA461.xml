@@ -84,6 +84,9 @@
         <Primitive path="app:versjonId" mapping="VERSJONID" />
       </Complex>
     </Complex>
+    <Complex path="app:posisjon">
+			<Geometry path="." mapping="Geometri_SPA"/>
+		</Complex>
     <Primitive path="app:høydereferanse" mapping="LEDN_HØYDEREFERANSE" />
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:VA_Sluk" table="VA_Sluk">
