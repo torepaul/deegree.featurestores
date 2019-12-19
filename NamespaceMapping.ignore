@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+	<baseUrl>https://raw.githubusercontent.com/Norconsult/deegree.featurestores/regplan452/</baseUrl>
+	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/Reguleringsplan/20190401">Regplan452.xml</configuration>
+</configurations>

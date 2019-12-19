@@ -1,0 +1,1070 @@
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/Reguleringsplan/20190401" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" configVersion="3.1.0">
+	<JDBCConnId>regplan452</JDBCConnId>
+	<StorageCRS dim="2D" srid="25832">EPSG:25832</StorageCRS>
+	<GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/Reguleringsplan/20190401/reguleringsplan_20190401.xsd</GMLSchema>
+	
+	<!-- For Reguleringsplan 4.52 oppdatert 20191203-Leg -->
+	<!-- Nytt i 4.52 PblMidlByggAnleggGrense og PblMidlByggAnleggOmråde -->
+	<FeatureTypeMapping name="app:RpGrense" table="vRpGrense">
+		<FIDMapping prefix="app.RpGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpOmråde" table="vRpOmråde">
+		<FIDMapping prefix="app.RpOmråde_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Primitive path="app:prosesshistorie" mapping="PROSESS_HISTORIE" />
+		<Primitive path="app:informasjon" mapping="INFORMASJON" />
+		<Primitive path="app:link" mapping="LINK" />
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Primitive path="app:plantype" mapping="PLANTYPE" />
+		<Primitive path="app:planstatus" mapping="PLANSTAT" />
+		<Primitive path="app:plannavn" mapping="PLANNAVN" />
+		<Primitive path="app:planbestemmelse" mapping="PLANBEST" />
+		<Primitive path="app:ikrafttredelsesdato" mapping="IKRAFT" />
+		<Primitive path="app:lovreferanse" mapping="LOVREFERANSE" />
+		<Primitive path="app:lovreferanseBeskrivelse" mapping="LOVREFBESKRIVELSE" />
+		<Primitive path="app:forslagsstillerType" mapping="FORSLAGSSTILLERTYPE" />
+		<Primitive path="app:vedtakEndeligPlanDato" mapping="VEDTAKENDELIGPLANDATO" />
+		<Primitive path="app:kunngjøringsdato" mapping="KUNNGJØRINGSDATO" />
+		<Primitive path="app:opprinneligplanid" mapping="OPPRINNELIGPLANID" />
+		<Primitive path="app:opprinneligadministrativenhet" mapping="OPPRINNELIGADMINISTRATIVENHET" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RbFormålOmråde" table="vRbFormålOmråde">
+		<FIDMapping prefix="app.RbFormålOmråde_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:reguleringsformål" mapping="REGFORM" />
+		<Primitive path="app:reguleringsformålsutdyping" mapping="REGFORMUTDYP" />
+		<Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
+		<Complex path="app:utnytting">
+			<Complex path="app:Utnytting">
+				<Primitive path="app:utnyttingstype" mapping="UTNTYP" />
+				<Primitive path="app:utnyttingstall" mapping="UTNTALL" />
+				<Primitive path="app:utnyttingstall_minimum" mapping="UTNTALL_MIN" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:uteoppholdsareal" mapping="UTEAREAL" />
+		<Primitive path="app:byggverkbestemmelse" mapping="BYGGVERK" />
+		<Primitive path="app:avkjørselsbestemmelse" mapping="AVKJ" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpFormålGrense" table="vRpFormålGrense">
+		<FIDMapping prefix="app.RpFormålGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpArealformålOmråde" table="vRpArealformålOmråde">
+		<FIDMapping prefix="app.RpArealformålOmråde_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:eierform" mapping="EIERFORM" />
+		<Primitive path="app:arealformål" mapping="RPAREALFORMÅL" />
+		<Primitive path="app:beskrivelse" mapping="BESKRIVELSE" />
+		<Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
+		<Complex path="app:utnytting">
+			<Complex path="app:RpUtnytting">
+				<Primitive path="app:utnyttingstype" mapping="UTNTYP" />
+				<Primitive path="app:utnyttingstall" mapping="UTNTALL" />
+				<Primitive path="app:utnyttingstall_minimum" mapping="UTNTALL_MIN" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:uteoppholdsareal" mapping="UTEAREAL" />
+		<Primitive path="app:byggverkbestemmelse" mapping="BYGGVERK" />
+		<Primitive path="app:avkjørselsbestemmelse" mapping="AVKJ" />
+	</FeatureTypeMapping>
+	
+		<FeatureTypeMapping name="app:RbBevaringGrense" table="vRbBevaringGrense">
+		<FIDMapping prefix="app.RbBevaringGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+				<!-- <Primitive path="app:navnerom" mapping="'http://skjema.geonorge.no/SOSI/produktspesifikasjon/Reguleringsplan/20190401'" /> -->
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RbBevaringOmråde" table="vRbBevaringOmråde">
+		<FIDMapping prefix="app.RbBevaringOmråde_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:reguleringsformål" mapping="REGFORM" />
+		<Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
+	</FeatureTypeMapping>	
+	<FeatureTypeMapping name="app:RbFareOmråde" table="vRbFareOmråde">
+		<FIDMapping prefix="app.RbFareOmråde_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:reguleringsformål" mapping="REGFORM" />
+		<Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
+		<Primitive path="app:reguleringsformålsutdyping" mapping="REGFORMUTDYP" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RbFornyelseGrense" table="vRbFornyelseGrense">
+		<FIDMapping prefix="app.RbFornyelseGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RbFornyelseOmråde" table="vRbFornyelseOmråde">
+		<FIDMapping prefix="app.RbFornyelseOmråde_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:reguleringsformål" mapping="REGFORM" />
+		<Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RbRekkefølgeGrense" table="vRbRekkefølgeGrense">
+		<FIDMapping prefix="app.RbRekkefølgeGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RbRekkefølgeOmråde" table="vRbRekkefølgeOmråde">
+		<FIDMapping prefix="app.RbRekkefølgeOmråde_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:reguleringsformål" mapping="REGFORM" />
+		<Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RbRestriksjonGrense" table="vRbRestriksjonGrense">
+		<FIDMapping prefix="app.RbRestriksjonGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RbRestriksjonOmråde" table="vRbRestriksjonOmråde">
+		<FIDMapping prefix="app.RbRestriksjonOmråde_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:reguleringsformål" mapping="REGFORM" />
+		<Primitive path="app:feltbetegnelse" mapping="FELTNAVN" />
+	</FeatureTypeMapping>
+	
+	<FeatureTypeMapping name="app:RpAngittHensynGrense" table="vRpAngittHensynGrense">
+		<FIDMapping prefix="app.RpAngittHensynGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpFareGrense" table="vRpFareGrense">
+		<FIDMapping prefix="app.RpFareGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpAngittHensynSone" table="vRpAngittHensynSone">
+		<FIDMapping prefix="app.RpAngittHensynSone_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:angittHensyn" mapping="RPANGITTHENSYN" />
+		<Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
+		<Primitive path="app:beskrivelse" mapping="BESKRIVELSE" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpBestemmelseGrense" table="vRpBestemmelseGrense">
+		<FIDMapping prefix="app.RpBestemmelseGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpBestemmelseOmråde" table="vRpBestemmelseOmråde">
+		<FIDMapping prefix="app.RpBestemmelseOmråde_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:bestemmelseOmrådeNavn" mapping="BESTEMMELSEOMRNAVN" />
+		<Primitive path="app:type" mapping="RPBESTEMMELSEHJEMMEL" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpBåndleggingGrense" table="vRpBåndleggingGrense">
+		<FIDMapping prefix="app.RpBåndleggingGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpBåndleggingSone" table="vRpBåndleggingSone">
+		<FIDMapping prefix="app.RpBåndleggingSone_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:båndlegging" mapping="RPBÅNDLEGGING" />
+		<Primitive path="app:båndlagtFremTil" mapping="BÅNDLAGTFREMTIL" />
+		<Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
+		<Primitive path="app:beskrivelse" mapping="BESKRIVELSE" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpDetaljeringGrense" table="vRpDetaljeringGrense">
+		<FIDMapping prefix="app.RpDetaljeringGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpDetaljeringSone" table="vRpDetaljeringSone">
+		<FIDMapping prefix="app.RpDetaljeringSone_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:detaljering" mapping="RPDETALJERING" />
+		<Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
+		<Primitive path="app:beskrivelse" mapping="BESKRIVELSE" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpFareSone" table="vRpFareSone">
+		<FIDMapping prefix="app.RpFareSone_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:fare" mapping="RPFARE" />
+		<Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
+		<Primitive path="app:beskrivelse" mapping="BESKRIVELSE" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpGjennomføringGrense" table="vRpGjennomføringGrense">
+		<FIDMapping prefix="app.RpGjennomføringGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpGjennomføringSone" table="vRpGjennomføringSone">
+		<FIDMapping prefix="app.RpGjennomføringSone_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:gjennomføring" mapping="RPGJENNOMFØRING" />
+		<Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
+		<Primitive path="app:beskrivelse" mapping="BESKRIVELSE" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpInfrastrukturGrense" table="vRpInfrastrukturGrense">
+		<FIDMapping prefix="app.RpInfrastrukturGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpInfrastrukturSone" table="vRpInfrastrukturSone">
+		<FIDMapping prefix="app.RpInfrastrukturSone_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:infrastruktur" mapping="RPINFRASTRUKTUR" />
+		<Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
+		<Primitive path="app:beskrivelse" mapping="BESKRIVELSE" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpSikringGrense" table="vRpSikringGrense">
+		<FIDMapping prefix="app.RpSikringGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpSikringSone" table="vRpSikringSone">
+		<FIDMapping prefix="app.RpSikringSone_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:sikring" mapping="RPSIKRING" />
+		<Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
+		<Primitive path="app:beskrivelse" mapping="BESKRIVELSE" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpStøyGrense" table="vRpStøyGrense">
+		<FIDMapping prefix="app.RpStøyGrense_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpStøySone" table="vRpStøySone">
+		<FIDMapping prefix="app.RpStøySone_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:støy" mapping="RPSTØY" />
+		<Primitive path="app:hensynSonenavn" mapping="HENSYNSONENAVN" />
+		<Primitive path="app:beskrivelse" mapping="BESKRIVELSE" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpJuridiskLinje" table="vRpJuridiskLinje">
+		<FIDMapping prefix="app.RpJuridiskLinje_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:juridisklinje" mapping="RPJURLINJE" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpJuridiskPunkt" table="vRpJuridiskPunkt">
+		<FIDMapping prefix="app.RpJuridiskPunkt_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:objektposisjon">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:symbolretning" mapping="SYMBOLRETNING" />
+		<Primitive path="app:juridiskpunkt" mapping="RPJURPUNKT" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpPåskrift" table="vRpPåskrift">
+		<FIDMapping prefix="app.RpPåskrift_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:objektposisjon">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:generellTekststreng" mapping="text" />
+		<Primitive path="app:påskriftType" mapping="RPPÅSKRIFTTYPE" />
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:RpRegulertHøyde" table="vRpRegulertHøyde">
+		<FIDMapping prefix="app.RpRegulertHøyde_">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Complex path="app:høydefraplanbestemmelse">
+			<Complex path="app:HøydeFraPlanbestemmelse">
+				<Primitive path="app:regulerthøyde" mapping="REGULERTHØYDE" />
+				<Primitive path="app:høydereferansesystem" mapping="HØYDE_REF" />
+			</Complex>
+		</Complex>
+	</FeatureTypeMapping>
+	
+	<!-- Nytt i 4.52 PblMidlByggAnleggGrense og PblMidlByggAnleggOmråde -->
+	<FeatureTypeMapping name="app:PblMidlByggAnleggGrense" table="vPblMidlByggAnleggGrense">
+		<FIDMapping prefix="app.PblMidlByggAnleggGrense">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:kvalitet">
+			<Complex path="app:Posisjonskvalitet">
+				<Primitive path="app:målemetode" mapping="MÅLEMETODE" />
+				<Primitive path="app:nøyaktighet" mapping="NØYAKTIGHET" />
+			</Complex>
+		</Complex>
+		<Complex path="app:grense">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:PblMidlByggAnleggOmråde" table="vPblMidlByggAnleggOmråde">
+		<FIDMapping prefix="app.PblMidlByggAnleggOmråde">
+			<Column name="lokalid" type="string" />
+		</FIDMapping>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid" />
+				<Primitive path="app:navnerom" mapping="NAVNEROM" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:førsteDigitaliseringsdato" mapping="FØRSTEDIGITALISERINGSDATO" />
+		<Primitive path="app:oppdateringsdato" mapping="OPPDATERINGSDATO" />
+		<Complex path="app:arealplanId">
+			<Complex path="app:NasjonalArealplanId">
+				<Primitive path="app:landkode" mapping="LANDKODE" />
+				<Primitive path="app:kommunenummer" mapping="KOMM" />
+				<Primitive path="app:planidentifikasjon" mapping="PLANID" />
+			</Complex>
+		</Complex>		<Primitive path="app:vertikalnivå" mapping="VERTNIV" />
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="RepPunkt_SPA" />
+		</Complex>
+		<Complex path="app:område">
+			<Geometry path="." mapping="Geometri_SPA" />
+		</Complex>
+		<Primitive path="app:bestemmelseOmrådeNavn" mapping="BESTEMMELSEOMRNAVN" />
+		<Complex path="app:saksnummer">
+			<Complex path="app:Saksnummer">
+				<Primitive path="app:saksår" mapping="SAKSÅR" />
+				<Primitive path="app:sakssekvensnummer" mapping="SAKSSEKVENSNUMMER" />
+			</Complex>
+		</Complex>
+		<Primitive path="app:avgjørelsesdato" mapping="AVGJDATO" />
+		<Primitive path="app:gyldigTilDato" mapping="GYLDIGTILDATO" />
+	</FeatureTypeMapping>
+</SQLFeatureStore>
