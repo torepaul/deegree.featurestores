@@ -39,4 +39,5 @@
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-LedningVA/4.61">FKB-LedningVA461.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.61">FKB-Vann461.xml</configuration>
 	<configuration namespace="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61">FKB-Veg461.xml</configuration>
+	<configuration namespace="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0">Elveg20.xml</configuration>
 </configurations>
