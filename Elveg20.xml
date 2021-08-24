@@ -1,18 +1,671 @@
 <SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:app="http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" configVersion="3.1.0">
 	<JDBCConnId>sql</JDBCConnId>
 	<StorageCRS dim="3D" srid="5972">EPSG:5972</StorageCRS>
-	<GMLSchema>http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Elveg_sfkb.xsd</GMLSchema>
+	<GMLSchema>http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Elveg-SFKB-20.xsd</GMLSchema>
+	<!-- <GMLSchema>http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Elveg_sfkb.xsd</GMLSchema> -->
+	
+	<FeatureTypeMapping name="app:Beredskapsveg" table="beredskapsveg">
+		<FIDMapping prefix="app.BEREDSKAPSVEG_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+<!-- 		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex> -->
+
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+	</FeatureTypeMapping>
+	
+	
+	<FeatureTypeMapping name="app:Fartsgrense" table="fartsgrense">
+		<FIDMapping prefix="app.FARTSGRENSE_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		
+		<Primitive path="app:fartsgrenseVerdi" mapping="fartsgrenseverdi"/>
+		<Primitive path="app:vedtaksnummer" mapping="vedtaksnummer"/>
+		<Primitive path="app:gyldigFraDato" mapping="gyldigfradato"/>
+		<Primitive path="app:arkivnummer" mapping="arkivnummer"/>
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+		<!--		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonStrekning">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+	
+		<FeatureTypeMapping name="app:FartsgrenseVariabel" table="fartsgrensevariabel">
+		<FIDMapping prefix="app.FARTSGRENSEVARIABEL_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Primitive path="app:fartsgrenseVerdi" mapping="fartsgrenseverdi"/>
+		<Primitive path="app:type" mapping="type"/>
+		<Primitive path="app:ukedag" mapping="ukedag"/>
+		<Primitive path="app:datoFra" mapping="datofra"/>
+		<Primitive path="app:datoTil" mapping="datotil"/>
+		<Primitive path="app:klokkeslettFra" mapping="klokkeslettfra"/>
+		<Primitive path="app:klokkeslettTil" mapping="klokkesletttil"/>
+		<Primitive path="app:vedtaksnummer" mapping="vedtaksnummer"/>
+		<Primitive path="app:gyldigFraDato" mapping="gyldigfradato"/>
+		<Primitive path="app:merknad" mapping="merknad"/>
+		<Primitive path="app:arkivnummer" mapping="arkivnummer"/>
+		<Primitive path="app:prosjektreferanse" mapping="prosjektreferanse"/>
+		
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+		<!--		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonStrekning">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+
+	
+	<FeatureTypeMapping name="app:FunksjonellVegklasse" table="funksjonellvegklasse">
+		<FIDMapping prefix="app.FUNKSJONELLVEGKLASSE_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Primitive path="app:vegklasse" mapping="vegklasse"/>
+		<Primitive path="app:merknad" mapping="merknad"/>
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+		<!--		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonStrekning">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+
+	<FeatureTypeMapping name="app:Gågatereguleringer" table="gågatereguleringer">
+		<FIDMapping prefix="app.GÅGATEREGULERINGER_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Primitive path="app:varetransportHverdagULørdagPeriode1FraKl" mapping="varetransporthverdagulørdagperiode1frakl"/>
+		<Primitive path="app:varetransportHverdagULørdagPeriode1TilKl" mapping="varetransporthverdagulørdagperiode1tilkl"/>
+		<Primitive path="app:varetransportHverdagULørdagPeriode2FraKl" mapping="varetransporthverdagulørdagperiode2frakl"/>
+		<Primitive path="app:varetransportHverdagULørdagPeriode2TilKl" mapping="varetransporthverdagulørdagperiode2tilkl"/>
+		<Primitive path="app:varetransportLørdagPeriode1FraKl" mapping="varetransportlørdagperiode1frakl"/>
+		<Primitive path="app:varetransportLørdagPeriode1TilKl" mapping="varetransportlørdagperiode1tilkl"/>
+		<Primitive path="app:varetransportLørdagPeriode2FraKl" mapping="varetransportlørdagperiode2frakl"/>
+		<Primitive path="app:varetransportLørdagPeriode2TilKl" mapping="varetransportlørdagperiode2tilkl"/>
+		<Primitive path="app:kjøringTilEiendommeneTillatt" mapping="kjøringtileiendommenetillatt"/>
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+		<!--		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonStrekning">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+	
+	<FeatureTypeMapping name="app:Høydebegrensning" table="høydebegrensning">
+		<FIDMapping prefix="app.HØYDEBEGRENSNING_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Primitive path="app:skiltaHøyde" mapping="skiltahøyde"/>
+		<Primitive path="app:typeHinder" mapping="typehinder"/>
+		<Primitive path="app:beregnetHøyde" mapping="beregnethøyde"/>
+		<Primitive path="app:navn" mapping="navn"/>
+		<Primitive path="app:merknad" mapping="merknad"/>
+		<Primitive path="app:bredde" mapping="bredde"/>
+		<Primitive path="app:hMinHøyreKant" mapping="hminhøyrekant"/>
+		<Primitive path="app:hMinMidt" mapping="hminmidt"/>
+		<Primitive path="app:hMinVenstreKant" mapping="hminvenstrekant"/>
+		<Primitive path="app:målemetode" mapping="målemetode"/>
+		<Primitive path="app:måledato" mapping="måledato"/>
+		<Primitive path="app:prosjektreferanse" mapping="prosjektreferanse"/>
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+		<!--		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonStrekning">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+
+	
+	<FeatureTypeMapping name="app:InnkjøringForbudt" table="innkjøringforbudt">
+		<FIDMapping prefix="app.INNKJØRINGFORBUDT_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Primitive path="app:merknad" mapping="merknad"/>
+		<Primitive path="app:skiltnummer" mapping="skiltnummer"/>
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+		<!--		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonStrekning">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+
+	
+	<FeatureTypeMapping name="app:Jernbanekryssing" table="jernbanekryssing">
+		<FIDMapping prefix="app.JERNBANEKRYSSING_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Primitive path="app:typeJernbanekryssing" mapping="typejernbanekryssing"/>
+		<Primitive path="app:tilleggsinformasjon" mapping="tilleggsinformasjon"/>
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="Geometri_SPA"/>
+		</Complex>
+		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonPunkt">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRPUNKT_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRPUNKT_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRPUNKT_LRAVSTANDSIDE"/>
+				<!--				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRPUNKT_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRPUNKT_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRPUNKT_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+-->
+				<Primitive path="app:felt" mapping="LRPUNKT_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRPUNKT_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRPUNKT_LRHØYDEPOSISJON"/>
+				<Primitive path="app:posisjon" mapping="LRPUNKT_LRPUNKTPOSISJON"/>
+			</Complex>
+		</Complex>
+	</FeatureTypeMapping>
+	
+	<FeatureTypeMapping name="app:Landbruksvegklasse" table="landbruksvegklasse">
+		<FIDMapping prefix="app.LANDBRUKSVEGKLASSE_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Primitive path="app:klasseLandbruksveg" mapping="klasselandbruksveg"/>
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+		<!--		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonStrekning">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+
+	
+	<FeatureTypeMapping name="app:Motorveg" table="motorveg">
+		<FIDMapping prefix="app.MOTORVEG_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Primitive path="app:motorvegtype" mapping="motorvegtype"/>
+		<Primitive path="app:vedtaksnummer" mapping="vedtaksnummer"/>
+		<Primitive path="app:arkivnummer" mapping="arkivnummer"/>
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+		<!--		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonStrekning">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:Serviceveg" table="serviceveg">
+		<FIDMapping prefix="app.SERVICEVEG_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+		<!--		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonStrekning">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+	<FeatureTypeMapping name="app:Svingerestriksjon" table="svingerestriksjon">
+		<FIDMapping prefix="app.SVINGERESTRIKSJON_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+		<Primitive path="app:merknad" mapping="merknad"/>
+		<Complex path="app:posisjon">
+			<Geometry path="." mapping="Geometri_SPA"/>
+		</Complex>
+		<!--	<Complex path="app:svingeforbudFra">
+			<Complex path="app:LineærPosisjonPunkt">
+				<Primitive path="app:lineærReferanseMetode" mapping="SVINGEFORBUDFRA_LRLRM"/>
+				<Primitive path="app:retning" mapping="SVINGEFORBUDFRA_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="SVINGEFORBUDFRA_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="SVINGEFORBUDFRA_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="SVINGEFORBUDFRA_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="SVINGEFORBUDFRA_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="SVINGEFORBUDFRA_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="SVINGEFORBUDFRA_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="SVINGEFORBUDFRA_LRHØYDEPOSISJON"/>
+				<Primitive path="app:posisjon" mapping="SVINGEFORBUDFRA_SVINGEFORBUDFRAPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+		<!--	<Complex path="app:svingeforbudTil">
+			<Complex path="app:LineærPosisjonPunkt">
+				<Primitive path="app:lineærReferanseMetode" mapping="SVINGEFORBUDTIL_LRLRM"/>
+				<Primitive path="app:retning" mapping="SVINGEFORBUDTIL_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="SVINGEFORBUDTIL_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="SVINGEFORBUDTIL_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="SVINGEFORBUDTIL_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="SVINGEFORBUDTIL_NVDB_VERSJONID"/>
+					</Complex>
+				
+				</Complex>
+				<Primitive path="app:felt" mapping="SVINGEFORBUDTIL_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="SVINGEFORBUDTIL_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="SVINGEFORBUDTIL_LRHØYDEPOSISJON"/>
+				<Primitive path="app:posisjon" mapping="SVINGEFORBUDTIL_SVINGEFORBUDTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+	
+	<FeatureTypeMapping name="app:Trafikkreguleringer" table="trafikkreguleringer">
+		<FIDMapping prefix="app.TRAFIKKREGULERINGER_">
+			<Column name="lokalid" type="string"/>
+		</FIDMapping>
+
+		<!--		<Complex path="app:NVDB_identifikasjon">
+			<Complex path="app:NVDB_Identifikasjon">
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
+			</Complex>
+		</Complex>
+-->
+		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
+		<Complex path="app:identifikasjon">
+			<Complex path="app:Identifikasjon">
+				<Primitive path="app:lokalId" mapping="lokalid"/>
+				<Primitive path="app:navnerom" mapping="navnerom"/>
+				<Primitive path="app:versjonId" mapping="VERSJONID"/>
+			</Complex>
+		</Complex>
+
+		<Primitive path="app:trafikkreguleringer" mapping="trafikkreguleringer"/>
+		<Primitive path="app:gjeldertidsrom" mapping="gjeldertidsrom"/>
+		<Primitive path="app:merknad" mapping="merknad"/>
+		<Complex path="app:senterlinje">
+			<Geometry path="." mapping="Geometri"/>
+		</Complex>
+		<!--		<Complex path="app:lineærPosisjon">
+			<Complex path="app:LineærPosisjonStrekning">
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
+				<Complex path="app:lenkesekvens">
+					<Complex path="app:NVDB_Identifikasjon">
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
+					</Complex>
+				</Complex>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
+			</Complex>
+		</Complex>
+-->
+	</FeatureTypeMapping>
+
 	<FeatureTypeMapping name="app:Veglenke" table="Veglenke">
 		<FIDMapping prefix="app.Veglenke_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
-		<Complex path="app:NVDB_identifikasjon">
+		<!--		<Complex path="app:NVDB_identifikasjon">
 			<Complex path="app:NVDB_Identifikasjon">
 				<Primitive path="app:NVDB_Id" mapping="NVDB_Id"/>
 				<Primitive path="app:navnerom" mapping="NVDB_navnerom"/>
 				<Primitive path="app:versjonId" mapping="NVDB_versjonId"/>
 			</Complex>
-		</Complex>
+		</Complex> -->
 		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
 		<Complex path="app:identifikasjon">
 			<Complex path="app:Identifikasjon">
@@ -43,13 +696,14 @@
 		<Complex path="app:lenkesekvens">
 			<Complex path="app:Lenkesekvensreferanse">
 				<!-- Disse må mappes til egenskaper i databasen som mangler? -->
-				<Complex path="app:NVDB_identifikasjon">
+				<!--				<Complex path="app:NVDB_identifikasjon">
 					<Complex path="app:NVDB_Identifikasjon">
 						<Primitive path="app:NVDB_Id" mapping="lenkesekvens_NVDB_Id"/>
 						<Primitive path="app:navnerom" mapping="lenkesekvens_NVDB_navnerom"/>
 						<Primitive path="app:versjonId" mapping="lenkesekvens_NVDB_versjonId"/>
 					</Complex>
 				</Complex>
+-->
 				<Primitive path="app:startposisjon" mapping="LRSTARTVERDI"/>
 				<Primitive path="app:sluttposisjon" mapping="LRSLUTTVERDI"/>
 			</Complex>
@@ -111,24 +765,20 @@
 			<!-- <Geometry path="." mapping="Geometri_SPA" /> -->
 		</Complex>
 	</FeatureTypeMapping>
-	
+
 	<FeatureTypeMapping name="app:Vegsperring" table="vegsperring">
 		<FIDMapping prefix="app.VEGSPERRING_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
-		<!-- 		<Complex path="gml:identifier">
-			<Primitive path="text()" mapping="gml_identifier"/>
-			<Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
-		</Complex>
-		<Complex path="app:NVDB_identifikasjon">
+		<!--		<Complex path="app:NVDB_identifikasjon">
 			<Complex path="app:NVDB_Identifikasjon">
-				<Primitive path="app:NVDB_Id" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_nvdb_id"/>
-				<Primitive path="app:navnerom" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_navnerom"/>
-				<Primitive path="app:versjonId" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_versjonid"/>
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
 			</Complex>
-		</Complex> -->
-		
+		</Complex>
+-->
 		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
 
 		<Complex path="app:identifikasjon">
@@ -145,42 +795,43 @@
 		<Primitive path="app:merknad" mapping="merknad"/>
 		<Primitive path="app:eier" mapping="eier"/>
 		<Complex path="app:posisjon">
-			<!-- 			<Primitive path="@nilReason" mapping="app_posisjon_attr_nilreason"/>
-			<Primitive path="@gml:remoteSchema" mapping="app_posisjon_attr_gml_remoteschema"/>
-			<Primitive path="@owns" mapping="app_posisjon_attr_owns"/> -->
 			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 
-		<Complex path="app:lineærPosisjon">
+		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonPunkt">
-				<!-- 				<Primitive path="app:lineærReferanseMetode" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_lineærrefer_17"/>
-				<Primitive path="app:retning" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_retning"/>
-				<Primitive path="app:avstandSide" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_avstandside"/>
+				<Primitive path="app:lineærReferanseMetode" mapping="LRPUNKT_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRPUNKT_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRPUNKT_LRAVSTANDSIDE"/>
 				<Complex path="app:lenkesekvens">
 					<Complex path="app:NVDB_Identifikasjon">
-						<Primitive path="app:NVDB_Id" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_lenkesekven_19"/>
-						<Primitive path="app:navnerom" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_lenkesekven_20"/>
-						<Primitive path="app:versjonId" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_lenkesekven_21"/>
+						<Primitive path="app:NVDB_Id" mapping="LRPUNKT_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRPUNKT_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRPUNKT_NVDB_VERSJONID"/>
 					</Complex>
 				</Complex>
-				<Primitive path="app:felt" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_felt"/>
-				<Primitive path="app:sideposisjon" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_sideposisjon"/>
-				<Primitive path="app:høydeposisjon" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_høydeposisjon"/> -->
+				<Primitive path="app:felt" mapping="LRPUNKT_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRPUNKT_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRPUNKT_LRHØYDEPOSISJON"/>
 				<Primitive path="app:posisjon" mapping="LRPUNKT_LRPUNKTPOSISJON"/>
 			</Complex>
 		</Complex>
+-->
 	</FeatureTypeMapping>
-	<FeatureTypeMapping name="app:Jernbanekryssing" table="jernbanekryssing">
-		<FIDMapping prefix="app.JERNBANEKRYSSING_">
+	
+	<FeatureTypeMapping name="app:VærutsattVeg" table="værutsattveg">
+		<FIDMapping prefix="app.VÆRUTSATTVEG_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
-		<!-- 		<Complex path="app:NVDB_identifikasjon">
+
+		<!--	<Complex path="app:NVDB_identifikasjon">
 			<Complex path="app:NVDB_Identifikasjon">
-				<Primitive path="app:NVDB_Id" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_nvdb_id"/>
-				<Primitive path="app:navnerom" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_navnerom"/>
-				<Primitive path="app:versjonId" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_versjonid"/>
+				<Primitive path="app:NVDB_Id" mapping="NVDB_ID"/>
+				<Primitive path="app:navnerom" mapping="NVDB_NAVNEROM"/>
+				<Primitive path="app:versjonId" mapping="NVDB_VERSJONID"/>
 			</Complex>
-		</Complex> -->
+		</Complex>
+-->
 		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
 		<Complex path="app:identifikasjon">
 			<Complex path="app:Identifikasjon">
@@ -189,151 +840,47 @@
 				<Primitive path="app:versjonId" mapping="VERSJONID"/>
 			</Complex>
 		</Complex>
-		<Primitive path="app:typeJernbanekryssing" mapping="typejernbanekryssing"/>
+
+		<Primitive path="app:navn" mapping="navn"/>
+		<Primitive path="app:høyfjellsstrekning" mapping="høyfjellsstrekning"/>
+				<Primitive path="app:stedligBeredskap" mapping="stedligberedskap"/>
+		<Primitive path="app:snødybde" mapping="snødybde"/>
+		<Primitive path="app:antallStengteDøgn" mapping="antallstengtedøgn"/>
+		<Primitive path="app:vinterstengt_FraDato" mapping="vinterstengt_fradato"/>
+		<Primitive path="app:vinterstengt_TilDato" mapping="vinterstengt_tildato"/>
+		<Primitive path="app:nattestengt_FraDato" mapping="nattestengt_fradato"/>
+		<Primitive path="app:nattestengt_TilDato" mapping="nattestengt_tildato"/>
+		<Primitive path="app:avgrensaVinterdriftFraDato" mapping="avgrensavinterdriftfradato"/>
+		<Primitive path="app:avgrensaVinterdriftTilDato" mapping="avgrensavinterdrifttildato"/>
+		<Primitive path="app:hovedproblem" mapping="hovedproblem"/>
+		<Primitive path="app:gjentakelsesintervall" mapping="gjentakelsesintervall"/>
+		<Primitive path="app:terskelverdi" mapping="terskelverdi"/>
+		<Primitive path="app:kilde" mapping="kilde"/>
 		<Primitive path="app:tilleggsinformasjon" mapping="tilleggsinformasjon"/>
-		<Complex path="app:posisjon">
-			<Geometry path="." mapping="Geometri_SPA"/>
-		</Complex>
-		<Complex path="app:lineærPosisjon">
-			<Complex path="app:LineærPosisjonPunkt">
-				<!-- 				<Primitive path="app:lineærReferanseMetode" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_lineærrefer_12"/>
-				<Primitive path="app:retning" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_retning"/>
-				<Primitive path="app:avstandSide" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_avstandside"/>
-				<Complex path="app:lenkesekvens">
-					<Complex path="app:NVDB_Identifikasjon">
-						<Primitive path="app:NVDB_Id" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_lenkesekven_14"/>
-						<Primitive path="app:navnerom" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_lenkesekven_15"/>
-						<Primitive path="app:versjonId" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_lenkesekven_16"/>
-					</Complex>
-				</Complex>
-				<Primitive path="app:felt" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_felt"/>
-				<Primitive path="app:sideposisjon" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_sideposisjon"/>
-				<Primitive path="app:høydeposisjon" mapping="app_lineærposisjon_app_lineærposisjonpunkt_app_høydeposisjon"/> -->
-				<Primitive path="app:posisjon" mapping="LRPUNKT_LRPUNKTPOSISJON"/>
-			</Complex>
-		</Complex>
-	</FeatureTypeMapping>
-	
-	<FeatureTypeMapping name="app:Svingerestriksjon" table="svingerestriksjon">
-		<FIDMapping prefix="app.SVINGERESTRIKSJON_">
-			<Column name="lokalid" type="string"/>
-		</FIDMapping>
 
-<!-- 		<Complex path="app:NVDB_identifikasjon">
-			<Complex path="app:NVDB_Identifikasjon">
-				<Primitive path="app:NVDB_Id" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_nvdb_id"/>
-				<Primitive path="app:navnerom" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_navnerom"/>
-				<Primitive path="app:versjonId" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_versjonid"/>
-			</Complex>
-		</Complex> -->
-
-		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
-		<Complex path="app:identifikasjon">
-			<Complex path="app:Identifikasjon">
-				<Primitive path="app:lokalId" mapping="lokalid"/>
-				<Primitive path="app:navnerom" mapping="navnerom"/>
-				<Primitive path="app:versjonId" mapping="VERSJONID"/>
-			</Complex>
-		</Complex>
-		<Primitive path="app:merknad" mapping="merknad"/>
-		<Complex path="app:posisjon">
-<!-- 			<Primitive path="@nilReason" mapping="app_posisjon_attr_nilreason"/>
-			<Primitive path="@gml:remoteSchema" mapping="app_posisjon_attr_gml_remoteschema"/>
-			<Primitive path="@owns" mapping="app_posisjon_attr_owns"/> -->
-			<Geometry path="." mapping="Geometri_SPA"/>
-		</Complex>
-		<Complex path="app:svingeforbudFra">
-			<Complex path="app:LineærPosisjonPunkt">
-<!-- 				<Primitive path="app:lineærReferanseMetode" mapping="app_svingeforbudfra_app_lineærposisjonpunkt_app_lineærrefe_22"/>
-				<Primitive path="app:retning" mapping="app_svingeforbudfra_app_lineærposisjonpunkt_app_retning"/>
-				<Primitive path="app:avstandSide" mapping="app_svingeforbudfra_app_lineærposisjonpunkt_app_avstandside"/>
-				<Complex path="app:lenkesekvens">
-					<Complex path="app:NVDB_Identifikasjon">
-						<Primitive path="app:NVDB_Id" mapping="app_svingeforbudfra_app_lineærposisjonpunkt_app_lenkesekve_24"/>
-						<Primitive path="app:navnerom" mapping="app_svingeforbudfra_app_lineærposisjonpunkt_app_lenkesekve_25"/>
-						<Primitive path="app:versjonId" mapping="app_svingeforbudfra_app_lineærposisjonpunkt_app_lenkesekve_26"/>
-					</Complex>
-				</Complex>
-				<Primitive path="app:felt" mapping="app_svingeforbudfra_app_lineærposisjonpunkt_app_felt"/>
-				<Primitive path="app:sideposisjon" mapping="app_svingeforbudfra_app_lineærposisjonpunkt_app_sideposisjon"/>
-				<Primitive path="app:høydeposisjon" mapping="app_svingeforbudfra_app_lineærposisjonpunkt_app_høydeposisjon"/> -->
-				<Primitive path="app:posisjon" mapping="SVINGEFORBUDFRA_LRPUNKTPOSISJON"/>
-			</Complex>
-		</Complex>
-		<Complex path="app:svingeforbudTil">
-			<Complex path="app:LineærPosisjonPunkt">
-<!-- 				<Primitive path="app:lineærReferanseMetode" mapping="app_svingeforbudtil_app_lineærposisjonpunkt_app_lineærrefe_27"/>
-				<Primitive path="app:retning" mapping="app_svingeforbudtil_app_lineærposisjonpunkt_app_retning"/>
-				<Primitive path="app:avstandSide" mapping="app_svingeforbudtil_app_lineærposisjonpunkt_app_avstandside"/>
-				<Complex path="app:lenkesekvens">
-					<Complex path="app:NVDB_Identifikasjon">
-						<Primitive path="app:NVDB_Id" mapping="app_svingeforbudtil_app_lineærposisjonpunkt_app_lenkesekve_29"/>
-						<Primitive path="app:navnerom" mapping="app_svingeforbudtil_app_lineærposisjonpunkt_app_lenkesekve_30"/>
-						<Primitive path="app:versjonId" mapping="app_svingeforbudtil_app_lineærposisjonpunkt_app_lenkesekve_31"/>
-					</Complex>
-				</Complex>
-				<Primitive path="app:felt" mapping="app_svingeforbudtil_app_lineærposisjonpunkt_app_felt"/>
-				<Primitive path="app:sideposisjon" mapping="app_svingeforbudtil_app_lineærposisjonpunkt_app_sideposisjon"/>
-				<Primitive path="app:høydeposisjon" mapping="app_svingeforbudtil_app_lineærposisjonpunkt_app_høydeposisjon"/> -->
-				<Primitive path="app:posisjon" mapping="SVINGEFORBUDTIL_LRPUNKTPOSISJON"/>
-			</Complex>
-		</Complex>
-	</FeatureTypeMapping>
-	
-	
-	<FeatureTypeMapping name="app:Fartsgrense" table="fartsgrense">
-		<FIDMapping prefix="app.FARTSGRENSE_">
-			<Column name="lokalid" type="string"/>
-		</FIDMapping>
-
-		<!-- 		<Complex path="app:NVDB_identifikasjon">
-			<Complex path="app:NVDB_Identifikasjon">
-				<Primitive path="app:NVDB_Id" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_nvdb_id"/>
-				<Primitive path="app:navnerom" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_navnerom"/>
-				<Primitive path="app:versjonId" mapping="app_nvdb_identifikasjon_app_nvdb_identifikasjon_app_versjonid"/>
-			</Complex>
-		</Complex> -->
-		
-		<Primitive path="app:oppdateringsdato" mapping="oppdateringsdato"/>
-		<Complex path="app:identifikasjon">
-			<Complex path="app:Identifikasjon">
-				<Primitive path="app:lokalId" mapping="lokalid"/>
-				<Primitive path="app:navnerom" mapping="navnerom"/>
-				<Primitive path="app:versjonId" mapping="VERSJONID"/>
-			</Complex>
-		</Complex>
-		
-		<Primitive path="app:fartsgrenseVerdi" mapping="fartsgrenseverdi"/>
-		<Primitive path="app:vedtaksnummer" mapping="vedtaksnummer"/>
-		<Primitive path="app:gyldigFraDato" mapping="gyldigfradato"/>
-		<Primitive path="app:arkivnummer" mapping="arkivnummer"/>
 		<Complex path="app:senterlinje">
-			<!-- 			<Primitive path="@nilReason" mapping="app_senterlinje_attr_nilreason"/>
-			<Primitive path="@gml:remoteSchema" mapping="app_senterlinje_attr_gml_remoteschema"/>
-			<Primitive path="@owns" mapping="app_senterlinje_attr_owns"/> -->
 			<Geometry path="." mapping="Geometri"/>
 		</Complex>
-		<!-- 	
-		<Complex path="app:lineærPosisjon">
-			<Join table="app_fartsgrense_app_lineærposisjon" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+		<!--	<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
-				<Primitive path="app:lineærReferanseMetode" mapping="app_lineærposisjonstrekning_app_lineærreferansemetode"/>
-				<Primitive path="app:retning" mapping="app_lineærposisjonstrekning_app_retning"/>
-				<Primitive path="app:avstandSide" mapping="app_lineærposisjonstrekning_app_avstandside"/>
+				<Primitive path="app:lineærReferanseMetode" mapping="LRSTREKNING_LRLRM"/>
+				<Primitive path="app:retning" mapping="LRSTREKNING_RETNING"/>
+				<Primitive path="app:avstandSide" mapping="LRSTREKNING_LRAVSTANDSIDE"/>
 				<Complex path="app:lenkesekvens">
 					<Complex path="app:NVDB_Identifikasjon">
-						<Primitive path="app:NVDB_Id" mapping="app_lineærposisjonstrekning_app_lenkesekvens_app_nvdb_iden_88"/>
-						<Primitive path="app:navnerom" mapping="app_lineærposisjonstrekning_app_lenkesekvens_app_nvdb_iden_89"/>
-						<Primitive path="app:versjonId" mapping="app_lineærposisjonstrekning_app_lenkesekvens_app_nvdb_iden_90"/>
+						<Primitive path="app:NVDB_Id" mapping="LRSTREKNING_NVDB_ID"/>
+						<Primitive path="app:navnerom" mapping="LRSTREKNING_NVDB_NAVNEROM"/>
+						<Primitive path="app:versjonId" mapping="LRSTREKNING_NVDB_VERSJONID"/>
 					</Complex>
 				</Complex>
-				<Primitive path="app:felt" mapping="app_lineærposisjonstrekning_app_felt"/>
-				<Primitive path="app:sideposisjon" mapping="app_lineærposisjonstrekning_app_sideposisjon"/>
-				<Primitive path="app:høydeposisjon" mapping="app_lineærposisjonstrekning_app_høydeposisjon"/>
-				<Primitive path="app:fraPosisjon" mapping="app_lineærposisjonstrekning_app_fraposisjon"/>
-				<Primitive path="app:tilPosisjon" mapping="app_lineærposisjonstrekning_app_tilposisjon"/>
+				<Primitive path="app:felt" mapping="LRSTREKNING_FELT"/>
+				<Primitive path="app:sideposisjon" mapping="LRSTREKNING_LRSIDEPOSISJON"/>
+				<Primitive path="app:høydeposisjon" mapping="LRSTREKNING_LRHØYDEPOSISJON"/>
+				<Primitive path="app:fraPosisjon" mapping="LRSTREKNING_LRFRAPOSISJON"/>
+				<Primitive path="app:tilPosisjon" mapping="LRSTREKNING_LRTILPOSISJON"/>
 			</Complex>
-		</Complex> -->
+		</Complex>
+-->
 	</FeatureTypeMapping>
 	
 </SQLFeatureStore>
