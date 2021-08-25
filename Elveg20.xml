@@ -377,25 +377,26 @@
 		<Complex path="app:posisjon">
 			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
-		<Complex path="app:lineærPosisjon">
+<!--	<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonPunkt">
 				<Primitive path="app:lineærReferanseMetode" mapping="LRPUNKT_LRLRM"/>
 				<Primitive path="app:retning" mapping="LRPUNKT_RETNING"/>
 				<Primitive path="app:avstandSide" mapping="LRPUNKT_LRAVSTANDSIDE"/>
-				<!--				<Complex path="app:lenkesekvens">
+								<Complex path="app:lenkesekvens">
 					<Complex path="app:NVDB_Identifikasjon">
 						<Primitive path="app:NVDB_Id" mapping="LRPUNKT_NVDB_ID"/>
 						<Primitive path="app:navnerom" mapping="LRPUNKT_NVDB_NAVNEROM"/>
 						<Primitive path="app:versjonId" mapping="LRPUNKT_NVDB_VERSJONID"/>
 					</Complex>
 				</Complex>
--->
+
 				<Primitive path="app:felt" mapping="LRPUNKT_FELT"/>
 				<Primitive path="app:sideposisjon" mapping="LRPUNKT_LRSIDEPOSISJON"/>
 				<Primitive path="app:høydeposisjon" mapping="LRPUNKT_LRHØYDEPOSISJON"/>
 				<Primitive path="app:posisjon" mapping="LRPUNKT_LRPUNKTPOSISJON"/>
 			</Complex>
 		</Complex>
+-->
 	</FeatureTypeMapping>
 	
 	<FeatureTypeMapping name="app:Landbruksvegklasse" table="landbruksvegklasse">
