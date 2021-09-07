@@ -210,15 +210,15 @@
 				<Primitive path="app:versjonId" mapping="VERSJONID"/>
 			</Complex>
 		</Complex>
-		<Primitive path="app:varetransportHverdagULørdagPeriode1FraKl" mapping="varetransporthverdagulørdagperiode1frakl"/>
-		<Primitive path="app:varetransportHverdagULørdagPeriode1TilKl" mapping="varetransporthverdagulørdagperiode1tilkl"/>
-		<Primitive path="app:varetransportHverdagULørdagPeriode2FraKl" mapping="varetransporthverdagulørdagperiode2frakl"/>
-		<Primitive path="app:varetransportHverdagULørdagPeriode2TilKl" mapping="varetransporthverdagulørdagperiode2tilkl"/>
-		<Primitive path="app:varetransportLørdagPeriode1FraKl" mapping="varetransportlørdagperiode1frakl"/>
-		<Primitive path="app:varetransportLørdagPeriode1TilKl" mapping="varetransportlørdagperiode1tilkl"/>
-		<Primitive path="app:varetransportLørdagPeriode2FraKl" mapping="varetransportlørdagperiode2frakl"/>
-		<Primitive path="app:varetransportLørdagPeriode2TilKl" mapping="varetransportlørdagperiode2tilkl"/>
-		<Primitive path="app:kjøringTilEiendommeneTillatt" mapping="kjøringtileiendommenetillatt"/>
+		<Primitive path="app:varetransportHverdagULørdagPeriode1FraKl" mapping="VARETRANSPORTULØRPERIODE1FRAKL"/>
+		<Primitive path="app:varetransportHverdagULørdagPeriode1TilKl" mapping="VARETRANSPORTULØRPERIODE1TILKL"/>
+		<Primitive path="app:varetransportHverdagULørdagPeriode2FraKl" mapping="VARETRANSPORTULØRPERIODE2FRAKL"/>
+		<Primitive path="app:varetransportHverdagULørdagPeriode2TilKl" mapping="VARETRANSPORTULØRPERIODE2TILKL"/>
+		<Primitive path="app:varetransportLørdagPeriode1FraKl" mapping="VARETRANSPORTLØRPERIODE1FRAKL"/>
+		<Primitive path="app:varetransportLørdagPeriode1TilKl" mapping="VARETRANSPORTLØRPERIODE1TILKL"/>
+		<Primitive path="app:varetransportLørdagPeriode2FraKl" mapping="VARETRANSPORTLØRPERIODE2FRAKL"/>
+		<Primitive path="app:varetransportLørdagPeriode2TilKl" mapping="VARETRANSPORTLØRPERIODE2TILKL"/>
+		<Primitive path="app:kjøringTilEiendommeneTillatt" mapping="KJØRINGTILEIENDOMMENETILLATT"/>
 		<Complex path="app:senterlinje">
 			<Geometry path="." mapping="Geometri"/>
 		</Complex>
@@ -265,18 +265,18 @@
 				<Primitive path="app:versjonId" mapping="VERSJONID"/>
 			</Complex>
 		</Complex>
-		<Primitive path="app:skiltaHøyde" mapping="skiltahøyde"/>
-		<Primitive path="app:typeHinder" mapping="typehinder"/>
-		<Primitive path="app:beregnetHøyde" mapping="beregnethøyde"/>
-		<Primitive path="app:navn" mapping="navn"/>
-		<Primitive path="app:merknad" mapping="merknad"/>
-		<Primitive path="app:bredde" mapping="bredde"/>
-		<Primitive path="app:hMinHøyreKant" mapping="hminhøyrekant"/>
-		<Primitive path="app:hMinMidt" mapping="hminmidt"/>
-		<Primitive path="app:hMinVenstreKant" mapping="hminvenstrekant"/>
-		<Primitive path="app:målemetode" mapping="målemetode"/>
-		<Primitive path="app:måledato" mapping="måledato"/>
-		<Primitive path="app:prosjektreferanse" mapping="prosjektreferanse"/>
+		<Primitive path="app:skiltaHøyde" mapping="SKILTAHØYDE"/>
+		<Primitive path="app:typeHinder" mapping="TYPEHINDER"/>
+		<Primitive path="app:beregnetHøyde" mapping="BEREGNETHØYDE"/>
+		<Primitive path="app:navn" mapping="NAVN"/>
+		<Primitive path="app:merknad" mapping="MERKNAD"/>
+		<Primitive path="app:bredde" mapping="BREDDE"/>
+		<Primitive path="app:hMinHøyreKant" mapping="HMINHØYREKANT"/>
+		<Primitive path="app:hMinMidt" mapping="HMINMIDT"/>
+		<Primitive path="app:hMinVenstreKant" mapping="HMINVENSTREKANT"/>
+		<Primitive path="app:målemetode" mapping="MÅLEMETODEHØYDEBEGRENSNING"/>
+		<Primitive path="app:måledato" mapping="MÅLEDATO"/>
+		<Primitive path="app:prosjektreferanse" mapping="PROSJEKTREFERANSE"/>
 		<Complex path="app:senterlinje">
 			<Geometry path="." mapping="Geometri"/>
 		</Complex>
@@ -628,7 +628,7 @@
 			</Complex>
 		</Complex>
 
-		<Primitive path="app:trafikkreguleringer" mapping="trafikkreguleringer"/>
+		<Primitive path="app:trafikkreguleringer" mapping="trafikkreguleringa"/>
 		<Primitive path="app:gjeldertidsrom" mapping="gjeldertidsrom"/>
 		<Primitive path="app:merknad" mapping="merknad"/>
 		<Complex path="app:senterlinje">
