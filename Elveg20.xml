@@ -25,7 +25,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 	</FeatureTypeMapping>
 	
@@ -57,7 +57,7 @@
 		<Primitive path="app:gyldigFraDato" mapping="gyldigfradato"/>
 		<Primitive path="app:arkivnummer" mapping="arkivnummer"/>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
@@ -116,7 +116,7 @@
 		<Primitive path="app:prosjektreferanse" mapping="prosjektreferanse"/>
 		
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
@@ -165,7 +165,7 @@
 		<Primitive path="app:vegklasse" mapping="vegklasse"/>
 		<Primitive path="app:merknad" mapping="merknad"/>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
@@ -220,7 +220,7 @@
 		<Primitive path="app:varetransportLørdagPeriode2TilKl" mapping="VARETRANSPORTLØRPERIODE2TILKL"/>
 		<Primitive path="app:kjøringTilEiendommeneTillatt" mapping="KJØRINGTILEIENDOMMENETILLATT"/>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
@@ -278,7 +278,7 @@
 		<Primitive path="app:måledato" mapping="MÅLEDATO"/>
 		<Primitive path="app:prosjektreferanse" mapping="PROSJEKTREFERANSE"/>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
@@ -327,7 +327,7 @@
 		<Primitive path="app:merknad" mapping="merknad"/>
 		<Primitive path="app:skiltnummer" mapping="skiltnummer"/>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
@@ -422,7 +422,7 @@
 		</Complex>
 		<Primitive path="app:klasseLandbruksveg" mapping="klasselandbruksveg"/>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
@@ -472,7 +472,7 @@
 		<Primitive path="app:vedtaksnummer" mapping="vedtaksnummer"/>
 		<Primitive path="app:arkivnummer" mapping="arkivnummer"/>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
@@ -517,7 +517,7 @@
 			</Complex>
 		</Complex>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
@@ -632,7 +632,7 @@
 		<Primitive path="app:gjeldertidsrom" mapping="gjeldertidsrom"/>
 		<Primitive path="app:merknad" mapping="merknad"/>
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--		<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
@@ -762,7 +762,7 @@
 		<Primitive path="app:feltoversikt" mapping="feltoversikt"/>
 
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 			<!-- <Geometry path="." mapping="Geometri_SPA" /> -->
 		</Complex>
 	</FeatureTypeMapping>
@@ -860,7 +860,7 @@
 		<Primitive path="app:tilleggsinformasjon" mapping="tilleggsinformasjon"/>
 
 		<Complex path="app:senterlinje">
-			<Geometry path="." mapping="Geometri"/>
+			<Geometry path="." mapping="Geometri_SPA"/>
 		</Complex>
 		<!--	<Complex path="app:lineærPosisjon">
 			<Complex path="app:LineærPosisjonStrekning">
