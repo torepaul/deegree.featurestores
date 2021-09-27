@@ -5,7 +5,7 @@
 	<!-- <GMLSchema>http://skjema.test.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Elveg_sfkb.xsd</GMLSchema> -->
 	
 	<FeatureTypeMapping name="app:Beredskapsveg" table="beredskapsveg">
-		<FIDMapping prefix="app.BEREDSKAPSVEG_">
+		<FIDMapping prefix="app.Beredskapsveg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 <!-- 		<Complex path="app:NVDB_identifikasjon">
@@ -31,7 +31,7 @@
 	
 	
 	<FeatureTypeMapping name="app:Fartsgrense" table="fartsgrense">
-		<FIDMapping prefix="app.FARTSGRENSE_">
+		<FIDMapping prefix="app.Fartsgrense_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -82,7 +82,7 @@
 	</FeatureTypeMapping>
 	
 		<FeatureTypeMapping name="app:FartsgrenseVariabel" table="fartsgrensevariabel">
-		<FIDMapping prefix="app.FARTSGRENSEVARIABEL_">
+		<FIDMapping prefix="app.FartsgrenseVariabel_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -142,7 +142,7 @@
 
 	
 	<FeatureTypeMapping name="app:FunksjonellVegklasse" table="funksjonellvegklasse">
-		<FIDMapping prefix="app.FUNKSJONELLVEGKLASSE_">
+		<FIDMapping prefix="app.FunksjonellVegklasse_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -190,7 +190,7 @@
 	</FeatureTypeMapping>
 
 	<FeatureTypeMapping name="app:Gågatereguleringer" table="gågatereguleringer">
-		<FIDMapping prefix="app.GÅGATEREGULERINGER_">
+		<FIDMapping prefix="app.Gågatereguleringer_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -245,7 +245,7 @@
 	</FeatureTypeMapping>
 	
 	<FeatureTypeMapping name="app:Høydebegrensning" table="høydebegrensning">
-		<FIDMapping prefix="app.HØYDEBEGRENSNING_">
+		<FIDMapping prefix="app.Høydebegrensning_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -304,7 +304,7 @@
 
 	
 	<FeatureTypeMapping name="app:InnkjøringForbudt" table="innkjøringforbudt">
-		<FIDMapping prefix="app.INNKJØRINGFORBUDT_">
+		<FIDMapping prefix="app.InnkjøringForbudt_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -353,7 +353,7 @@
 
 	
 	<FeatureTypeMapping name="app:Jernbanekryssing" table="jernbanekryssing">
-		<FIDMapping prefix="app.JERNBANEKRYSSING_">
+		<FIDMapping prefix="app.Jernbanekryssing_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 		<!--		<Complex path="app:NVDB_identifikasjon">
@@ -400,7 +400,7 @@
 	</FeatureTypeMapping>
 	
 	<FeatureTypeMapping name="app:Landbruksvegklasse" table="landbruksvegklasse">
-		<FIDMapping prefix="app.LANDBRUKSVEGKLASSE_">
+		<FIDMapping prefix="app.Landbruksvegklasse_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -448,7 +448,7 @@
 
 	
 	<FeatureTypeMapping name="app:Motorveg" table="motorveg">
-		<FIDMapping prefix="app.MOTORVEG_">
+		<FIDMapping prefix="app.Motorveg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -496,7 +496,7 @@
 -->
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Serviceveg" table="serviceveg">
-		<FIDMapping prefix="app.SERVICEVEG_">
+		<FIDMapping prefix="app.Serviceveg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -541,7 +541,7 @@
 -->
 	</FeatureTypeMapping>
 	<FeatureTypeMapping name="app:Svingerestriksjon" table="svingerestriksjon">
-		<FIDMapping prefix="app.SVINGERESTRIKSJON_">
+		<FIDMapping prefix="app.Svingerestriksjon_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -607,7 +607,7 @@
 	</FeatureTypeMapping>
 	
 	<FeatureTypeMapping name="app:Trafikkreguleringer" table="trafikkreguleringer">
-		<FIDMapping prefix="app.TRAFIKKREGULERINGER_">
+		<FIDMapping prefix="app.Trafikkreguleringer_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -768,7 +768,7 @@
 	</FeatureTypeMapping>
 
 	<FeatureTypeMapping name="app:Vegsperring" table="vegsperring">
-		<FIDMapping prefix="app.VEGSPERRING_">
+		<FIDMapping prefix="app.Vegsperring_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -821,7 +821,7 @@
 	</FeatureTypeMapping>
 	
 	<FeatureTypeMapping name="app:VærutsattVeg" table="værutsattveg">
-		<FIDMapping prefix="app.VÆRUTSATTVEG_">
+		<FIDMapping prefix="app.VærutsattVeg_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
 
@@ -885,3 +885,4 @@
 	</FeatureTypeMapping>
 	
 </SQLFeatureStore>
+
