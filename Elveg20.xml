@@ -656,7 +656,7 @@
 -->
 	</FeatureTypeMapping>
 
-	<FeatureTypeMapping name="app:Veglenke" table="veglenkeElveg">
+	<FeatureTypeMapping name="app:Veglenke" table="veglenke">
 		<FIDMapping prefix="app.Veglenke_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
@@ -767,7 +767,7 @@
 		</Complex>
 	</FeatureTypeMapping>
 
-	<FeatureTypeMapping name="app:Vegsperring" table="vegsperringElveg">
+	<FeatureTypeMapping name="app:Vegsperring" table="vegsperring">
 		<FIDMapping prefix="app.Vegsperring_">
 			<Column name="lokalid" type="string"/>
 		</FIDMapping>
