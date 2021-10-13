@@ -727,7 +727,7 @@
 				<Complex path="app:vegsystem">
 					<Complex path="app:Vegsystem">
 						<Primitive path="app:vegkategori" mapping="vegkategori"/>
-						<Primitive path="app:fase" mapping="vegfase"/>
+						<Primitive path="app:fase" mapping="fase"/>
 						<Primitive path="app:vegnummer" mapping="vegnummer"/>
 					</Complex>
 				</Complex>
